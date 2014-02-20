@@ -3,7 +3,7 @@ package com.bs.selenium.util;
 /*
  * Bean representing a browser. It contains name, version and platform fields.
  * 
- * @author Sebastiano Armeli-Battana
+ * @author 
  */
 public class Browser {
 

@@ -12,34 +12,31 @@ import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.iphone.IPhoneDriver;
-import org.openqa.selenium.safari.SafariDriver;
-import org.openqa.selenium.phantomjs.PhantomJSDriver;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
-
-import com.opera.core.systems.OperaDriver;
+import org.openqa.selenium.safari.SafariDriver;
 
 import com.bs.selenium.util.Browser;
 import com.bs.selenium.webdriver.AuthenticatedHtmlUnitDriver;
+import com.opera.core.systems.OperaDriver;
 
-import com.bs.selenium.util.Browser;
+
 
 /*
  * Factory to instantiate a WebDriver object. It returns an instance of the driver (local invocation) or an instance of RemoteWebDriver
  * 
- * @author Sebastiano Armeli-Battana
+ * @author 
  */
 public class WebDriverFactory {
 
 	/* Browsers constants */
 	public static final String CHROME = "chrome";
 	public static final String FIREFOX = "firefox";
+	public static final String SAFARI = "safari";
 	public static final String OPERA = "opera";
 	public static final String INTERNET_EXPLORER = "ie";
-	public static final String PHANTOMJS = "phantomjs";
 	public static final String HTML_UNIT = "htmlunit";
-	public static final String SAFARI = "safari";
 	public static final String IPHONE = "iphone";
 
 	/* Platform constants */
@@ -102,12 +99,10 @@ public class WebDriverFactory {
 			.setCapability(
 					InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS,
 					true);
-		} else if (PHANTOMJS.equals(browserName)) {
-			capability = DesiredCapabilities.phantomjs();
-		} else if (OPERA.equals(browserName)) {
-			capability = DesiredCapabilities.opera();
 		} else if (SAFARI.equals(browserName)) {
 			capability = DesiredCapabilities.safari();
+		} else if (OPERA.equals(browserName)) {
+			capability = DesiredCapabilities.opera();
 		} else if (ANDROID.equals(browserName)) {
 			capability = DesiredCapabilities.android();
 		} else if (IPHONE.equals(browserName)) {
@@ -180,9 +175,6 @@ public class WebDriverFactory {
 
 		} else if (SAFARI.equals(browser)) {
 			webDriver = new SafariDriver();
-
-		} else if (PHANTOMJS.equals(browser)) {
-			webDriver = new PhantomJSDriver();
 
 		} else if (IPHONE.equals(browser)) {
 			try {

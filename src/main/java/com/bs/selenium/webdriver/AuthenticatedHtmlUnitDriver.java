@@ -10,7 +10,7 @@ import com.gargoylesoftware.htmlunit.WebClient;
 /*
  * Class extending HtmlUnitDriver to support BASIC authentication
  * 
- * @author Sebastiano Armeli-Battana
+ * @author 
  */
 public class AuthenticatedHtmlUnitDriver extends HtmlUnitDriver {
 	private static String USERNAME;
