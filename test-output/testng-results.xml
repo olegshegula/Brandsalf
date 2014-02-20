@@ -2,12 +2,12 @@
 <testng-results skipped="1" failed="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="408" started-at="2014-02-20T18:24:39Z" finished-at="2014-02-20T18:24:40Z">
+  <suite name="Default suite" duration-ms="822" started-at="2014-02-20T19:41:54Z" finished-at="2014-02-20T19:41:55Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="408" started-at="2014-02-20T18:24:39Z" finished-at="2014-02-20T18:24:40Z">
+    <test name="Default test" duration-ms="822" started-at="2014-02-20T19:41:54Z" finished-at="2014-02-20T19:41:55Z">
       <class name="com.bs.selenium.functional.LoginTest">
-        <test-method status="FAIL" signature="init()[pri:0, instance:com.bs.selenium.functional.LoginTest@53aa4bb4]" name="init" is-config="true" duration-ms="0" started-at="2014-02-20T20:24:39Z" finished-at="2014-02-20T20:24:39Z">
+        <test-method status="FAIL" signature="init()[pri:0, instance:com.bs.selenium.functional.LoginTest@53aa4bb4]" name="init" is-config="true" duration-ms="0" started-at="2014-02-20T21:41:54Z" finished-at="2014-02-20T21:41:54Z">
           <exception class="java.lang.NoSuchMethodError">
             <message>
               <![CDATA[com.google.common.io.Resources.asByteSource(Ljava/net/URL;)Lcom/google/common/io/ByteSource;]]>
@@ -56,15 +56,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="SKIP" signature="mayBeLogout()[pri:0, instance:com.bs.selenium.functional.LoginTest@53aa4bb4]" name="mayBeLogout" is-config="true" duration-ms="0" started-at="2014-02-20T20:24:40Z" finished-at="2014-02-20T20:24:40Z">
+        <test-method status="SKIP" signature="mayBeLogout()[pri:0, instance:com.bs.selenium.functional.LoginTest@53aa4bb4]" name="mayBeLogout" is-config="true" duration-ms="0" started-at="2014-02-20T21:41:55Z" finished-at="2014-02-20T21:41:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- mayBeLogout -->
-        <test-method status="SKIP" signature="testLogOut()[pri:0, instance:com.bs.selenium.functional.LoginTest@53aa4bb4]" name="testLogOut" duration-ms="2" started-at="2014-02-20T20:24:40Z" finished-at="2014-02-20T20:24:40Z">
+        <test-method status="SKIP" signature="testLoginOK()[pri:0, instance:com.bs.selenium.functional.LoginTest@53aa4bb4]" name="testLoginOK" duration-ms="2" started-at="2014-02-20T21:41:55Z" finished-at="2014-02-20T21:41:55Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLogOut -->
-        <test-method status="SKIP" signature="stop()[pri:0, instance:com.bs.selenium.functional.LoginTest@53aa4bb4]" name="stop" is-config="true" duration-ms="0" started-at="2014-02-20T20:24:40Z" finished-at="2014-02-20T20:24:40Z">
+        </test-method> <!-- testLoginOK -->
+        <test-method status="SKIP" signature="stop()[pri:0, instance:com.bs.selenium.functional.LoginTest@53aa4bb4]" name="stop" is-config="true" duration-ms="0" started-at="2014-02-20T21:41:55Z" finished-at="2014-02-20T21:41:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stop -->
