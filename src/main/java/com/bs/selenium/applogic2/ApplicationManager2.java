@@ -38,6 +38,7 @@ public class ApplicationManager2 implements ApplicationManager {
     userHelper = new UserHelper2(this);
     filmHelper = new FilmHelper2(this);
     navHelper = new NavigationHelper2(this);
+    
 
     getNavigationHelper().openMainPage();
   }

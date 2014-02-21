@@ -12,6 +12,7 @@ public class PageManager {
   public InternalPage internalPage;
   public UserProfilePage userProfilePage;
   public UserManagementPage userManagementPage;
+  public LoadPage loadPage;
 
   public PageManager(WebDriver driver) {
     this.driver = driver;
@@ -19,12 +20,13 @@ public class PageManager {
     internalPage = initElements(new InternalPage(this));
     userProfilePage = initElements(new UserProfilePage(this));
     userManagementPage = initElements(new UserManagementPage(this));
+    loadPage = initElements(new LoadPage(this)); 
   }
   
   private <T extends Page> T initElements(T page) {
     //PageFactory.initElements(driver, page);
     //PageFactory.initElements(new AjaxElementLocatorFactory(driver, 10), page);
-    PageFactory.initElements(new DisplayedElementLocatorFactory(driver, 10), page);
+    PageFactory.initElements(new DisplayedElementLocatorFactory(driver, 20), page);
     return page;
   }
   

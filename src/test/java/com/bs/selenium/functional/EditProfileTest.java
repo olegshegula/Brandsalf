@@ -19,7 +19,7 @@ public class EditProfileTest extends com.bs.selenium.pages.TestBase {
 
 		// Prepare the new data for profile
 		User edituser = new User().setUservideo("http://www.youtube.com/watch?v=tswOmw6vqhI")
-				.setUsername("Юыху1").setLogin("oleg").setPhone("0675627660")
+				.setUsername("Юыху2").setLogin("oleg").setPhone("0675627660")
 				.setEmail("oleg.shegula@gmail.com").setPassword("123qweasd")
 				.setPassword2("123qweasd");
 

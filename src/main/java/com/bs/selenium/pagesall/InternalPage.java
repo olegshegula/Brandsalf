@@ -29,6 +29,9 @@ public class InternalPage extends AnyPage {
   
   @FindBy(xpath = "//a[text()='Вихід']")
   private WebElement profilemenuexit;
+  
+  @FindBy(xpath = "//div[@id='moveFileList']/a[text()='Проекти']")
+  private WebElement projectlink;
 
   @FindBy(xpath = ".//*[@id='bs-example-navbar-collapse-1']/ul[2]/li[2]/a")
   private WebElement logoutLink;
@@ -45,10 +48,17 @@ public class InternalPage extends AnyPage {
     return pages.userManagementPage;
   }
 */  
+  
+  
   public LoginPage clickLogoutLink() {
     logoutLink.click();
     profilemenuexit.click();    
    // wait.until(alertIsPresent()).accept();
     return pages.loginPage;
   }
+  
+  public LoadPage clickProjectLink() {
+	  projectlink.click();	   
+	   return pages.loadPage;
+	  }
 }

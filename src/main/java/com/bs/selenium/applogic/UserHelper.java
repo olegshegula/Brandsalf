@@ -1,5 +1,6 @@
 package com.bs.selenium.applogic;
 
+import com.bs.selenium.model.Folder;
 import com.bs.selenium.model.User;
 
 public interface UserHelper {
@@ -12,4 +13,6 @@ public interface UserHelper {
 	void edituserprofile(User user);	
 	int getNumbersofLayoutBags() throws Exception;	
 	boolean hasNoLayoutBugs() throws Exception;
+	void createFolder(Folder foldername);
+	boolean isFolderCreated(Folder foldername);
 }

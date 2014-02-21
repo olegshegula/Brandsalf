@@ -18,7 +18,7 @@
 	<test name="Test3">
 		<parameter name="path" value="/"/>
 		<classes>
-		    <class name="com.bs.selenium.layout.LayoutTest"/>
+		    <class name="com.bs.selenium.functional.AddNewFolderTest"/>
 		</classes>
 	</test>  		
 </suite>
