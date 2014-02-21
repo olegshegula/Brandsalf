@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 import com.bs.selenium.model.User;
 import com.bs.selenium.pages.TestBase;
 
-public class TestLayout extends TestBase {
+public class LayoutTest extends TestBase {
 
 	@Test
 	public void testLoginPageOk() throws Exception {

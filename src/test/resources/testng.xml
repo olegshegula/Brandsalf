@@ -13,5 +13,12 @@
 		<classes>
 		    <class name="com.bs.selenium.functional.EditProfileTest"/>
 		</classes>
-	</test>  	
+	</test>  
+	
+	<test name="Test3">
+		<parameter name="path" value="/"/>
+		<classes>
+		    <class name="com.bs.selenium.layout.LayoutTest"/>
+		</classes>
+	</test>  		
 </suite>
