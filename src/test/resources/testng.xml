@@ -6,5 +6,12 @@
 		<classes>
 		    <class name="com.bs.selenium.functional.LoginTest"/>
 		</classes>
+	</test>  
+	
+	<test name="Test2">
+		<parameter name="path" value="/"/>
+		<classes>
+		    <class name="com.bs.selenium.functional.EditProfileTest"/>
+		</classes>
 	</test>  	
 </suite>

@@ -1,9 +1,7 @@
 package com.bs.selenium.functional;
 
-import static org.junit.Assert.assertTrue;
-
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.testng.annotations.*;
 
 import com.bs.selenium.model.User;
 
@@ -35,7 +33,7 @@ public class EditProfileTest extends com.bs.selenium.pages.TestBase {
 		//Check
 		 User correctuser = new User().setLogin("oleg").setPassword("123qweasd");
 		    app.getUserHelper().loginAs(correctuser);
-		    assertTrue(app.getUserHelper().isLoggedInAs(correctuser));
+		    Assert.assertTrue(app.getUserHelper().isLoggedInAs(correctuser));
 
 	}
 }

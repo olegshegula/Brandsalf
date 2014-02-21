@@ -3,8 +3,9 @@ package com.bs.selenium.functional;
 import org.testng.annotations.*;
 
 import com.bs.selenium.model.User;
+import org.testng.Assert;
 
-import static org.junit.Assert.*;
+//import static org.junit.Assert.*;
 
 public class LoginTest extends com.bs.selenium.pages.TestBase {
 
@@ -21,7 +22,7 @@ public class LoginTest extends com.bs.selenium.pages.TestBase {
     User user = new User().setLogin("oleg").setPassword("123qweasd");
     app.getUserHelper().loginAs(user);
     
-    assertTrue(app.getUserHelper().isLoggedInAs(user));
+    Assert.assertTrue(app.getUserHelper().isLoggedInAs(user));
         
   }
 
@@ -30,7 +31,7 @@ public class LoginTest extends com.bs.selenium.pages.TestBase {
     User user = new User().setLogin("admin").setPassword("wrong");
     app.getUserHelper().loginAs(user);
     // assertFalse(app.getUserHelper().isLoggedIn());
-    assertTrue(app.getUserHelper().isNotLoggedIn());
+    Assert.assertTrue(app.getUserHelper().isNotLoggedIn());
   }
 
   
@@ -38,7 +39,7 @@ public class LoginTest extends com.bs.selenium.pages.TestBase {
   public void testLoginFailedWrongLogin() throws Exception {
     User user = new User().setLogin("sdf3").setPassword("123qweasd");
     app.getUserHelper().loginAs(user);
-    assertTrue(app.getUserHelper().isNotLoggedIn());
+    Assert.assertTrue(app.getUserHelper().isNotLoggedIn());
   }
   
   
@@ -46,7 +47,7 @@ public class LoginTest extends com.bs.selenium.pages.TestBase {
   public void testLoginFailedBlankLoginPasswd() throws Exception {
     User user = new User().setLogin("").setPassword("");
     app.getUserHelper().loginAs(user);
-    assertTrue(app.getUserHelper().isNotLoggedIn());
+    Assert.assertTrue(app.getUserHelper().isNotLoggedIn());
   }
   
   @Test
@@ -54,7 +55,7 @@ public class LoginTest extends com.bs.selenium.pages.TestBase {
     User user = new User().setLogin("oleg").setPassword("123qweasd");
     app.getUserHelper().loginAs(user);    
     app.getUserHelper().logout();
-    assertTrue(app.getUserHelper().isNotLoggedIn());
+    Assert.assertTrue(app.getUserHelper().isNotLoggedIn());
   }
   
 }
