@@ -6,8 +6,6 @@
       <class name="com.bs.selenium.functional.AddNewFolderTest">
         <methods>
           <include name="init"/>
-          <include name="stop"/>
-          <include name="mayBeLogout"/>
           <include name="testAddNewFolderforProjectOk"/>
         </methods>
       </class> <!-- com.bs.selenium.functional.AddNewFolderTest -->

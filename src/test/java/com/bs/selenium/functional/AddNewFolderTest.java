@@ -2,6 +2,7 @@ package com.bs.selenium.functional;
 
 
 
+import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -27,6 +28,9 @@ public class AddNewFolderTest extends TestBase {
 		//Add new folder to Project
 		app.getUserHelper().loginAs(user);
 		app.getUserHelper().createFolder(foldername);
+		//Check existing of folder
+		
+		Assert.assertTrue(app.getUserHelper().isFolderCreated(foldername));
 		
 	}
 }
