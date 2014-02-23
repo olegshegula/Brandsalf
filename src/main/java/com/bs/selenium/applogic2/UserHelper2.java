@@ -121,6 +121,8 @@ public class UserHelper2 extends DriverBasedHelper implements UserHelper {
 
 	@Override
 	public boolean isFolderCreated(Folder foldername) {
+		pages.
+		
 		
 		List<String> actualLinkList = new ArrayList<String>();
 		List<String> expectedLinkList = Arrays.asList("’мельницький");
