@@ -121,17 +121,18 @@ public class UserHelper2 extends DriverBasedHelper implements UserHelper {
 
 	@Override
 	public boolean isFolderCreated(Folder foldername) {
-		
+		pages.internalPage.ensurePageLoaded().clickProjectLink();
 		List<String> actualLinkList = new ArrayList<String>();
-		List<String> expectedLinkList = Arrays.asList("’мельницький");
+		List<String> expectedLinkList = Arrays.asList(foldername.getName());
 
 		List<WebElement> linkList = driver.findElements(By.id("moveFileList"));
 		for (WebElement element : linkList) {
 			System.out.println(element.getText());
-
 			actualLinkList.add(element.getText());
 		}
-		aactualLinkList.containsAll(expectedLinkList);
+		if(actualLinkList.contains(expectedLinkList)==true){
+			return true;
+		}
 		return false;
 	}
 
