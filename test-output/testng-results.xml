@@ -2,27 +2,43 @@
 <testng-results skipped="1" failed="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="453" started-at="2014-02-23T13:08:50Z" finished-at="2014-02-23T13:08:50Z">
+  <suite name="Default suite" duration-ms="22981" started-at="2014-02-23T13:27:17Z" finished-at="2014-02-23T13:27:40Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="453" started-at="2014-02-23T13:08:50Z" finished-at="2014-02-23T13:08:50Z">
+    <test name="Default test" duration-ms="22981" started-at="2014-02-23T13:27:17Z" finished-at="2014-02-23T13:27:40Z">
       <class name="com.bs.selenium.functional.AddNewFolderTest">
-        <test-method status="FAIL" signature="init()[pri:0, instance:com.bs.selenium.functional.AddNewFolderTest@415dd2f9]" name="init" is-config="true" duration-ms="0" started-at="2014-02-23T15:08:50Z" finished-at="2014-02-23T15:08:50Z">
-          <exception class="java.lang.NoSuchMethodError">
+        <test-method status="FAIL" signature="init()[pri:0, instance:com.bs.selenium.functional.AddNewFolderTest@415dd2f9]" name="init" is-config="true" duration-ms="0" started-at="2014-02-23T15:27:17Z" finished-at="2014-02-23T15:27:17Z">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[com.google.common.io.Resources.asByteSource(Ljava/net/URL;)Lcom/google/common/io/ByteSource;]]>
+              <![CDATA[unknown error: unable to discover open pages
+  (Driver info: chromedriver=2.4.226107,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 21.46 seconds
+Build info: version: '2.39.0', revision: '14fa800511cc5d66d426e08b0b2ab926c7ed7398', time: '2013-12-16 13:18:38'
+System info: host: 'Home-PC', ip: '169.254.75.128', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_45'
+Driver info: org.openqa.selenium.chrome.ChromeDriver]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NoSuchMethodError: com.google.common.io.Resources.asByteSource(Ljava/net/URL;)Lcom/google/common/io/ByteSource;
-	at org.openqa.selenium.safari.SafariExtensions.getExtensionResource(SafariExtensions.java:293)
-	at org.openqa.selenium.safari.SafariExtensions.install(SafariExtensions.java:217)
-	at org.openqa.selenium.safari.SafariDriverCommandExecutor.start(SafariDriverCommandExecutor.java:95)
-	at org.openqa.selenium.safari.SafariDriver.startClient(SafariDriver.java:77)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:110)
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: unable to discover open pages
+  (Driver info: chromedriver=2.4.226107,platform=Windows NT 6.1 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 21.46 seconds
+Build info: version: '2.39.0', revision: '14fa800511cc5d66d426e08b0b2ab926c7ed7398', time: '2013-12-16 13:18:38'
+System info: host: 'Home-PC', ip: '169.254.75.128', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_45'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:216)
+	at org.openqa.selenium.chrome.ChromeDriver.startSession(ChromeDriver.java:182)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:111)
 	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:115)
-	at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:63)
-	at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:47)
-	at com.bs.selenium.webdriver.WebDriverFactory.getInstance(WebDriverFactory.java:177)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:161)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:150)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:107)
+	at com.bs.selenium.webdriver.WebDriverFactory.getInstance(WebDriverFactory.java:156)
 	at com.bs.selenium.webdriver.WebDriverFactory.getInstance(WebDriverFactory.java:77)
 	at com.bs.selenium.applogic2.ApplicationManager2.<init>(ApplicationManager2.java:34)
 	at com.bs.selenium.pages.TestBase.init(TestBase.java:18)
@@ -52,19 +68,19 @@
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NoSuchMethodError -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="SKIP" signature="mayBeLogout()[pri:0, instance:com.bs.selenium.functional.AddNewFolderTest@415dd2f9]" name="mayBeLogout" is-config="true" duration-ms="0" started-at="2014-02-23T15:08:50Z" finished-at="2014-02-23T15:08:50Z">
+        <test-method status="SKIP" signature="mayBeLogout()[pri:0, instance:com.bs.selenium.functional.AddNewFolderTest@415dd2f9]" name="mayBeLogout" is-config="true" duration-ms="0" started-at="2014-02-23T15:27:40Z" finished-at="2014-02-23T15:27:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- mayBeLogout -->
-        <test-method status="SKIP" signature="testAddNewFolderforProjectOk()[pri:0, instance:com.bs.selenium.functional.AddNewFolderTest@415dd2f9]" name="testAddNewFolderforProjectOk" duration-ms="0" started-at="2014-02-23T15:08:50Z" finished-at="2014-02-23T15:08:50Z">
+        <test-method status="SKIP" signature="testAddNewFolderforProjectOk()[pri:0, instance:com.bs.selenium.functional.AddNewFolderTest@415dd2f9]" name="testAddNewFolderforProjectOk" duration-ms="1" started-at="2014-02-23T15:27:40Z" finished-at="2014-02-23T15:27:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAddNewFolderforProjectOk -->
-        <test-method status="SKIP" signature="stop()[pri:0, instance:com.bs.selenium.functional.AddNewFolderTest@415dd2f9]" name="stop" is-config="true" duration-ms="0" started-at="2014-02-23T15:08:50Z" finished-at="2014-02-23T15:08:50Z">
+        <test-method status="SKIP" signature="stop()[pri:0, instance:com.bs.selenium.functional.AddNewFolderTest@415dd2f9]" name="stop" is-config="true" duration-ms="0" started-at="2014-02-23T15:27:40Z" finished-at="2014-02-23T15:27:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stop -->
