@@ -1,11 +1,16 @@
 package com.bs.selenium.applogic2;
 
 import java.io.File;
+import java.io.UnsupportedEncodingException;
+import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
+import java.util.Collections;
+import java.util.Iterator;
 import java.util.List;
 
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
@@ -119,27 +124,20 @@ public class UserHelper2 extends DriverBasedHelper implements UserHelper {
 	public boolean isFolderCreated(Folder foldername) {
 		pages.internalPage.ensurePageLoaded().clickProjectLink();
 		List<String> actualLinkList = new ArrayList<String>();
-		List<String> expectedLinkList = Arrays.asList(foldername.getName());
 
-		List<WebElement> linkList = driver.findElements(By.id("moveFileList"));
-		
+		List<String> expectedList = Arrays.asList(foldername.getName());
+
+		List<WebElement> linkList = pages.getWebDriver().findElements(
+				By.xpath("//div[@id='moveFileList']/a"));
+
 		for (WebElement element : linkList) {
-			System.out.println(element.getText());
 			actualLinkList.add(element.getText());
-		}		
-		
-		for (String element1 : expectedLinkList) {
-			System.out.println(element1);
-			
-		}		
-		//System.out.println(foldername.getName());
-		//System.out.println(actualLinkList.containsAll(expectedLinkList));
-		if(actualLinkList.containsAll(expectedLinkList)==true){
-			
-			return true;
+			System.out.println(element.getText());
 		}
-		return false;
-		
+
+		System.out.println("---------------------");
+		return actualLinkList.containsAll(expectedList);
+
 	}
 }
 

@@ -22,7 +22,7 @@ public class AddNewFolderTest extends TestBase {
 	@Test
 	public void testAddNewFolderforProjectOk() throws Exception {
 		//Prepare data
-		Folder foldername = new Folder().setName("FirstAuto");
+		Folder foldername = new Folder().setName("AutoTest");
 		User user = new User().setLogin("oleg").setPassword("123qweasd");
 		
 		//Add new folder to Project
