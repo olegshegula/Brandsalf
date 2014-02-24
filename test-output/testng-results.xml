@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="27758" started-at="2014-02-23T14:00:03Z" finished-at="2014-02-23T14:00:31Z">
+  <suite name="Default suite" duration-ms="12199" started-at="2014-02-24T07:22:04Z" finished-at="2014-02-24T07:22:16Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="27758" started-at="2014-02-23T14:00:03Z" finished-at="2014-02-23T14:00:31Z">
+    <test name="Default test" duration-ms="12199" started-at="2014-02-24T07:22:04Z" finished-at="2014-02-24T07:22:16Z">
       <class name="com.bs.selenium.functional.AddNewFolderTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.bs.selenium.functional.AddNewFolderTest@7388665b]" name="init" is-config="true" duration-ms="17282" started-at="2014-02-23T16:00:03Z" finished-at="2014-02-23T16:00:21Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.bs.selenium.functional.AddNewFolderTest@5853c95f]" name="init" is-config="true" duration-ms="6423" started-at="2014-02-24T09:22:04Z" finished-at="2014-02-24T09:22:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="mayBeLogout()[pri:0, instance:com.bs.selenium.functional.AddNewFolderTest@7388665b]" name="mayBeLogout" is-config="true" duration-ms="54" started-at="2014-02-23T16:00:21Z" finished-at="2014-02-23T16:00:21Z">
+        <test-method status="PASS" signature="mayBeLogout()[pri:0, instance:com.bs.selenium.functional.AddNewFolderTest@5853c95f]" name="mayBeLogout" is-config="true" duration-ms="52" started-at="2014-02-24T09:22:11Z" finished-at="2014-02-24T09:22:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- mayBeLogout -->
-        <test-method status="FAIL" signature="testAddNewFolderforProjectOk()[pri:0, instance:com.bs.selenium.functional.AddNewFolderTest@7388665b]" name="testAddNewFolderforProjectOk" duration-ms="10365" started-at="2014-02-23T16:00:21Z" finished-at="2014-02-23T16:00:31Z">
+        <test-method status="FAIL" signature="testAddNewFolderforProjectOk()[pri:0, instance:com.bs.selenium.functional.AddNewFolderTest@5853c95f]" name="testAddNewFolderforProjectOk" duration-ms="5684" started-at="2014-02-24T09:22:11Z" finished-at="2014-02-24T09:22:16Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -57,7 +57,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAddNewFolderforProjectOk -->
-        <test-method status="PASS" signature="stop()[pri:0, instance:com.bs.selenium.functional.AddNewFolderTest@7388665b]" name="stop" is-config="true" duration-ms="2450" started-at="2014-02-23T16:00:31Z" finished-at="2014-02-23T16:00:34Z">
+        <test-method status="PASS" signature="stop()[pri:0, instance:com.bs.selenium.functional.AddNewFolderTest@5853c95f]" name="stop" is-config="true" duration-ms="2200" started-at="2014-02-24T09:22:17Z" finished-at="2014-02-24T09:22:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stop -->

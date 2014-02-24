@@ -2,9 +2,7 @@ package com.bs.selenium.functional;
 
 import org.testng.annotations.*;
 
-import com.bs.selenium.model.User;
 
-import static org.junit.Assert.*;
 
 public class AddNewUserTest extends com.bs.selenium.pages.TestBase {
 

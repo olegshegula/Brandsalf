@@ -12,11 +12,7 @@ import org.openqa.selenium.WebElement;
 import com.bs.selenium.applogic.UserHelper;
 import com.bs.selenium.model.Folder;
 import com.bs.selenium.model.User;
-import com.bs.selenium.pagesall.Page;
 import com.bs.selenium.pagesall.UserProfilePage;
-import com.googlecode.fightinglayoutbugs.DetectInvalidImageUrls;
-import com.googlecode.fightinglayoutbugs.DetectTextNearOrOverlappingHorizontalEdge;
-import com.googlecode.fightinglayoutbugs.DetectTextWithTooLowContrast;
 import com.googlecode.fightinglayoutbugs.FightingLayoutBugs;
 import com.googlecode.fightinglayoutbugs.LayoutBug;
 import com.googlecode.fightinglayoutbugs.LayoutBugDetector;
@@ -126,12 +122,18 @@ public class UserHelper2 extends DriverBasedHelper implements UserHelper {
 		List<String> expectedLinkList = Arrays.asList(foldername.getName());
 
 		List<WebElement> linkList = driver.findElements(By.id("moveFileList"));
+		
 		for (WebElement element : linkList) {
 			System.out.println(element.getText());
 			actualLinkList.add(element.getText());
-		}
-		System.out.println(foldername.getName());
-		System.out.println(actualLinkList.contains(expectedLinkList));
+		}		
+		
+		for (String element1 : expectedLinkList) {
+			System.out.println(element1);
+			
+		}		
+		//System.out.println(foldername.getName());
+		//System.out.println(actualLinkList.containsAll(expectedLinkList));
 		if(actualLinkList.containsAll(expectedLinkList)==true){
 			
 			return true;
