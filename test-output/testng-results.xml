@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="0" total="1" passed="0">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite name="Default suite" duration-ms="22981" started-at="2014-02-23T13:27:17Z" finished-at="2014-02-23T13:27:40Z">
     <groups>
     </groups>
@@ -81,10 +82,26 @@ Driver info: org.openqa.selenium.chrome.ChromeDriver
           </reporter-output>
         </test-method> <!-- testAddNewFolderforProjectOk -->
         <test-method status="SKIP" signature="stop()[pri:0, instance:com.bs.selenium.functional.AddNewFolderTest@415dd2f9]" name="stop" is-config="true" duration-ms="0" started-at="2014-02-23T15:27:40Z" finished-at="2014-02-23T15:27:40Z">
+=======
+  <suite name="Default suite" duration-ms="20980" started-at="2014-02-24T14:26:36Z" finished-at="2014-02-24T14:26:57Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="20980" started-at="2014-02-24T14:26:36Z" finished-at="2014-02-24T14:26:57Z">
+      <class name="com.bs.selenium.layout.LayoutTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.bs.selenium.layout.LayoutTest@b7e2544]" name="init" is-config="true" duration-ms="4850" started-at="2014-02-24T16:26:36Z" finished-at="2014-02-24T16:26:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="testInternalPagePositive()[pri:0, instance:com.bs.selenium.layout.LayoutTest@b7e2544]" name="testInternalPagePositive" duration-ms="16089" started-at="2014-02-24T16:26:41Z" finished-at="2014-02-24T16:26:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInternalPagePositive -->
+        <test-method status="PASS" signature="stop()[pri:0, instance:com.bs.selenium.layout.LayoutTest@b7e2544]" name="stop" is-config="true" duration-ms="1691" started-at="2014-02-24T16:26:57Z" finished-at="2014-02-24T16:26:59Z">
+>>>>>>> c700a560ca7d77a627fd9817054ea03eb330ea66
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stop -->
-      </class> <!-- com.bs.selenium.functional.AddNewFolderTest -->
+      </class> <!-- com.bs.selenium.layout.LayoutTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

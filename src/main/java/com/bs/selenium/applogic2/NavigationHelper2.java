@@ -1,7 +1,5 @@
 package com.bs.selenium.applogic2;
 
-import org.openqa.selenium.By;
-
 import com.bs.selenium.applogic.NavigationHelper;
 
 public class NavigationHelper2 extends DriverBasedHelper implements NavigationHelper {

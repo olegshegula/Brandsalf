@@ -1,6 +1,7 @@
 package com.bs.selenium.applogic2;
 
 import java.io.File;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
@@ -12,19 +13,13 @@ import org.openqa.selenium.WebElement;
 import com.bs.selenium.applogic.UserHelper;
 import com.bs.selenium.model.Folder;
 import com.bs.selenium.model.User;
-import com.bs.selenium.pagesall.Page;
 import com.bs.selenium.pagesall.UserProfilePage;
-import com.googlecode.fightinglayoutbugs.DetectInvalidImageUrls;
-import com.googlecode.fightinglayoutbugs.DetectTextNearOrOverlappingHorizontalEdge;
-import com.googlecode.fightinglayoutbugs.DetectTextWithTooLowContrast;
 import com.googlecode.fightinglayoutbugs.FightingLayoutBugs;
 import com.googlecode.fightinglayoutbugs.LayoutBug;
 import com.googlecode.fightinglayoutbugs.LayoutBugDetector;
 import com.googlecode.fightinglayoutbugs.WebPage;
 
 public class UserHelper2 extends DriverBasedHelper implements UserHelper {
-
-	private WebPage _driver;
 
 	public UserHelper2(ApplicationManager2 manager) {
 		super(manager.getWebDriver());
@@ -85,7 +80,7 @@ public class UserHelper2 extends DriverBasedHelper implements UserHelper {
 		try {
 
 			final LayoutBugDetector detector = new FightingLayoutBugs();
-			WebPage webPage = new WebPage(driver);
+			WebPage webPage = new WebPage(pages.getWebDriver());
 			detector.setScreenshotDir(new File("pic"));
 			final Collection<LayoutBug> layoutBugs = detector
 					.findLayoutBugsIn(webPage);
@@ -123,17 +118,19 @@ public class UserHelper2 extends DriverBasedHelper implements UserHelper {
 	public boolean isFolderCreated(Folder foldername) {
 		pages.internalPage.ensurePageLoaded().clickProjectLink();
 		List<String> actualLinkList = new ArrayList<String>();
-		List<String> expectedLinkList = Arrays.asList(foldername.getName());
 
-		List<WebElement> linkList = driver.findElements(By.id("moveFileList"));
+		List<String> expectedList = Arrays.asList(foldername.getName());
+
+		List<WebElement> linkList = pages.getWebDriver().findElements(
+				By.xpath("//div[@id='moveFileList']/a"));
+
 		for (WebElement element : linkList) {
-			System.out.println(element.getText());
 			actualLinkList.add(element.getText());
+			System.out.println(element.getText());
 		}
-		if(actualLinkList.containsAll(expectedLinkList)==true){
-			return true;
-		}
-		return false;
+
+		return actualLinkList.containsAll(expectedList);
+
 	}
 }
 
