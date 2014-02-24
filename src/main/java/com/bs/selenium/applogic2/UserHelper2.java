@@ -130,10 +130,14 @@ public class UserHelper2 extends DriverBasedHelper implements UserHelper {
 			System.out.println(element.getText());
 			actualLinkList.add(element.getText());
 		}
-		if(actualLinkList.contains(expectedLinkList)==true){
+		System.out.println(foldername.getName());
+		System.out.println(actualLinkList.contains(expectedLinkList));
+		if(actualLinkList.containsAll(expectedLinkList)==true){
+			
 			return true;
 		}
 		return false;
+		
 	}
 }
 

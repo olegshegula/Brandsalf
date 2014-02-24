@@ -1,41 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="1" failed="0" total="1" passed="0">
+<testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="453" started-at="2014-02-23T13:08:50Z" finished-at="2014-02-23T13:08:50Z">
+  <suite name="Default suite" duration-ms="27758" started-at="2014-02-23T14:00:03Z" finished-at="2014-02-23T14:00:31Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="453" started-at="2014-02-23T13:08:50Z" finished-at="2014-02-23T13:08:50Z">
+    <test name="Default test" duration-ms="27758" started-at="2014-02-23T14:00:03Z" finished-at="2014-02-23T14:00:31Z">
       <class name="com.bs.selenium.functional.AddNewFolderTest">
-        <test-method status="FAIL" signature="init()[pri:0, instance:com.bs.selenium.functional.AddNewFolderTest@415dd2f9]" name="init" is-config="true" duration-ms="0" started-at="2014-02-23T15:08:50Z" finished-at="2014-02-23T15:08:50Z">
-          <exception class="java.lang.NoSuchMethodError">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.bs.selenium.functional.AddNewFolderTest@7388665b]" name="init" is-config="true" duration-ms="17282" started-at="2014-02-23T16:00:03Z" finished-at="2014-02-23T16:00:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="mayBeLogout()[pri:0, instance:com.bs.selenium.functional.AddNewFolderTest@7388665b]" name="mayBeLogout" is-config="true" duration-ms="54" started-at="2014-02-23T16:00:21Z" finished-at="2014-02-23T16:00:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mayBeLogout -->
+        <test-method status="FAIL" signature="testAddNewFolderforProjectOk()[pri:0, instance:com.bs.selenium.functional.AddNewFolderTest@7388665b]" name="testAddNewFolderforProjectOk" duration-ms="10365" started-at="2014-02-23T16:00:21Z" finished-at="2014-02-23T16:00:31Z">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[com.google.common.io.Resources.asByteSource(Ljava/net/URL;)Lcom/google/common/io/ByteSource;]]>
+              <![CDATA[expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NoSuchMethodError: com.google.common.io.Resources.asByteSource(Ljava/net/URL;)Lcom/google/common/io/ByteSource;
-	at org.openqa.selenium.safari.SafariExtensions.getExtensionResource(SafariExtensions.java:293)
-	at org.openqa.selenium.safari.SafariExtensions.install(SafariExtensions.java:217)
-	at org.openqa.selenium.safari.SafariDriverCommandExecutor.start(SafariDriverCommandExecutor.java:95)
-	at org.openqa.selenium.safari.SafariDriver.startClient(SafariDriver.java:77)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:110)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:115)
-	at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:63)
-	at org.openqa.selenium.safari.SafariDriver.<init>(SafariDriver.java:47)
-	at com.bs.selenium.webdriver.WebDriverFactory.getInstance(WebDriverFactory.java:177)
-	at com.bs.selenium.webdriver.WebDriverFactory.getInstance(WebDriverFactory.java:77)
-	at com.bs.selenium.applogic2.ApplicationManager2.<init>(ApplicationManager2.java:34)
-	at com.bs.selenium.pages.TestBase.init(TestBase.java:18)
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.bs.selenium.functional.AddNewFolderTest.testAddNewFolderforProjectOk(AddNewFolderTest.java:33)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:175)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:107)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
 	at org.testng.TestRunner.privateRun(TestRunner.java:767)
 	at org.testng.TestRunner.run(TestRunner.java:617)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
@@ -52,19 +53,11 @@
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NoSuchMethodError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method status="SKIP" signature="mayBeLogout()[pri:0, instance:com.bs.selenium.functional.AddNewFolderTest@415dd2f9]" name="mayBeLogout" is-config="true" duration-ms="0" started-at="2014-02-23T15:08:50Z" finished-at="2014-02-23T15:08:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- mayBeLogout -->
-        <test-method status="SKIP" signature="testAddNewFolderforProjectOk()[pri:0, instance:com.bs.selenium.functional.AddNewFolderTest@415dd2f9]" name="testAddNewFolderforProjectOk" duration-ms="0" started-at="2014-02-23T15:08:50Z" finished-at="2014-02-23T15:08:50Z">
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAddNewFolderforProjectOk -->
-        <test-method status="SKIP" signature="stop()[pri:0, instance:com.bs.selenium.functional.AddNewFolderTest@415dd2f9]" name="stop" is-config="true" duration-ms="0" started-at="2014-02-23T15:08:50Z" finished-at="2014-02-23T15:08:50Z">
+        <test-method status="PASS" signature="stop()[pri:0, instance:com.bs.selenium.functional.AddNewFolderTest@7388665b]" name="stop" is-config="true" duration-ms="2450" started-at="2014-02-23T16:00:31Z" finished-at="2014-02-23T16:00:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stop -->
