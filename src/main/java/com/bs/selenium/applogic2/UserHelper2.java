@@ -1,16 +1,12 @@
 package com.bs.selenium.applogic2;
 
 import java.io.File;
-import java.io.UnsupportedEncodingException;
-import java.nio.charset.Charset;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
-import java.util.Collections;
-import java.util.Iterator;
 import java.util.List;
 
-import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
@@ -24,8 +20,6 @@ import com.googlecode.fightinglayoutbugs.LayoutBugDetector;
 import com.googlecode.fightinglayoutbugs.WebPage;
 
 public class UserHelper2 extends DriverBasedHelper implements UserHelper {
-
-	private WebPage _driver;
 
 	public UserHelper2(ApplicationManager2 manager) {
 		super(manager.getWebDriver());
@@ -86,7 +80,7 @@ public class UserHelper2 extends DriverBasedHelper implements UserHelper {
 		try {
 
 			final LayoutBugDetector detector = new FightingLayoutBugs();
-			WebPage webPage = new WebPage(driver);
+			WebPage webPage = new WebPage(pages.getWebDriver());
 			detector.setScreenshotDir(new File("pic"));
 			final Collection<LayoutBug> layoutBugs = detector
 					.findLayoutBugsIn(webPage);

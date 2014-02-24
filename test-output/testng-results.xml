@@ -2,28 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="11338" started-at="2014-02-24T13:51:16Z" finished-at="2014-02-24T13:51:28Z">
+  <suite name="Default suite" duration-ms="20980" started-at="2014-02-24T14:26:36Z" finished-at="2014-02-24T14:26:57Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="11338" started-at="2014-02-24T13:51:16Z" finished-at="2014-02-24T13:51:28Z">
-      <class name="com.bs.selenium.functional.AddNewFolderTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.bs.selenium.functional.AddNewFolderTest@5853c95f]" name="init" is-config="true" duration-ms="4797" started-at="2014-02-24T15:51:16Z" finished-at="2014-02-24T15:51:21Z">
+    <test name="Default test" duration-ms="20980" started-at="2014-02-24T14:26:36Z" finished-at="2014-02-24T14:26:57Z">
+      <class name="com.bs.selenium.layout.LayoutTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.bs.selenium.layout.LayoutTest@b7e2544]" name="init" is-config="true" duration-ms="4850" started-at="2014-02-24T16:26:36Z" finished-at="2014-02-24T16:26:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="mayBeLogout()[pri:0, instance:com.bs.selenium.functional.AddNewFolderTest@5853c95f]" name="mayBeLogout" is-config="true" duration-ms="70" started-at="2014-02-24T15:51:21Z" finished-at="2014-02-24T15:51:21Z">
+        <test-method status="PASS" signature="testInternalPagePositive()[pri:0, instance:com.bs.selenium.layout.LayoutTest@b7e2544]" name="testInternalPagePositive" duration-ms="16089" started-at="2014-02-24T16:26:41Z" finished-at="2014-02-24T16:26:57Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- mayBeLogout -->
-        <test-method status="PASS" signature="testAddNewFolderforProjectOk()[pri:0, instance:com.bs.selenium.functional.AddNewFolderTest@5853c95f]" name="testAddNewFolderforProjectOk" duration-ms="6437" started-at="2014-02-24T15:51:21Z" finished-at="2014-02-24T15:51:28Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testAddNewFolderforProjectOk -->
-        <test-method status="PASS" signature="stop()[pri:0, instance:com.bs.selenium.functional.AddNewFolderTest@5853c95f]" name="stop" is-config="true" duration-ms="1579" started-at="2014-02-24T15:51:28Z" finished-at="2014-02-24T15:51:29Z">
+        </test-method> <!-- testInternalPagePositive -->
+        <test-method status="PASS" signature="stop()[pri:0, instance:com.bs.selenium.layout.LayoutTest@b7e2544]" name="stop" is-config="true" duration-ms="1691" started-at="2014-02-24T16:26:57Z" finished-at="2014-02-24T16:26:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stop -->
-      </class> <!-- com.bs.selenium.functional.AddNewFolderTest -->
+      </class> <!-- com.bs.selenium.layout.LayoutTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
