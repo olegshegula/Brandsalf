@@ -86,14 +86,14 @@
   <!-- profiles -->
   <profiles>
     <profile>
-      <id>local</id>
+      <id>firefox</id>
       <properties>
         <env>local</env>
         <user.username></user.username>
         <user.password></user.password>
         <grid2.hub></grid2.hub>
-        <site.url></site.url>
-        <browser.name></browser.name>
+        <site.url>http://185.25.118.92/</site.url>
+        <browser.name>firefox</browser.name>
         <browser.version></browser.version>
         <browser.platform></browser.platform>
       </properties>
@@ -102,40 +102,53 @@
       </activation>
     </profile>
     <profile>
-      <id>dev</id>
+      <id>chrome</id>
       <properties>
         <env>dev</env>
         <user.username></user.username>
         <user.password></user.password>
         <grid2.hub></grid2.hub>
-        <site.url></site.url>
-        <browser.name></browser.name>
+        <site.url>http://185.25.118.92/</site.url>
+        <browser.name>chrome</browser.name>
         <browser.version></browser.version>
         <browser.platform></browser.platform>
       </properties>
     </profile>
     <profile>
-      <id>test</id>
+      <id>opera</id>
       <properties>
         <env>test</env>
         <user.username></user.username>
         <user.password></user.password>
         <grid2.hub></grid2.hub>
-        <site.url></site.url>
-        <browser.name></browser.name>
+        <site.url>http://185.25.118.92/</site.url>
+        <browser.name>opera</browser.name>
         <browser.version></browser.version>
         <browser.platform></browser.platform>
       </properties>
     </profile>
-    <profile>
-      <id>prod</id>
+    <profile>      
+      <id>safari</id>
       <properties>
         <env>prod</env>
         <user.username></user.username>
         <user.password></user.password>
         <grid2.hub></grid2.hub>
-        <site.url></site.url>
-        <browser.name></browser.name>
+        <site.url>http://185.25.118.92/</site.url>
+        <browser.name>safari</browser.name>
+        <browser.version></browser.version>
+        <browser.platform></browser.platform>
+      </properties>
+    </profile>
+     <profile>
+      <id>firefox_linux</id>
+      <properties>
+        <env>prod</env>
+        <user.username></user.username>
+        <user.password></user.password>
+        <grid2.hub></grid2.hub>
+        <site.url>http://185.25.118.92/</site.url>
+        <browser.name>firefox</browser.name>
         <browser.version></browser.version>
         <browser.platform></browser.platform>
       </properties>
