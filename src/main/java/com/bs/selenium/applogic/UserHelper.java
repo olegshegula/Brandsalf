@@ -17,4 +17,5 @@ public interface UserHelper {
 	boolean isFolderCreated(Folder foldername);
 	void createFolderForTemplate(Folder foldername);
 	void createFolderForOffers(Folder foldername);
+	boolean isToggled();
 }

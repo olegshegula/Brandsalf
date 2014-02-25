@@ -42,19 +42,21 @@ public class InternalPage extends AnyPage {
 
 	@FindBy(xpath = ".//*[@id='bs-example-navbar-collapse-1']/ul[2]/li[2]/a")
 	private WebElement logoutLink;
+	
+	@FindBy(id = "toggleTreeList")
+	private WebElement toggleTreeListBtn;
+	
+	@FindBy(id = "moveFileList")
+	private WebElement moveFileList;
+	
+	
 
 	public UserProfilePage clickUserProfilePage() {
 		userProfileLink.click();
 		profilemenu.click();
 		return pages.userProfilePage;
 	}
-
-	/*
-	 * public UserManagementPage clickUserManagementLink() {
-	 * userManagementLink.click();
-	 * driver.findElement(By.xpath("//a[text()='Профіль']")); return
-	 * pages.userManagementPage; }
-	 */
+	
 
 	public LoginPage clickLogoutLink() {
 		logoutLink.click();
@@ -76,6 +78,16 @@ public class InternalPage extends AnyPage {
 	public LoadPage clickOffersLink() {
 		offerlink.click();
 		return pages.loadPage;
+	}
+	
+	public InternalPage clickToggleButton(){
+		toggleTreeListBtn.click();
+		return pages.internalPage;
+	}
+	
+	public boolean isElementDisplayed(){
+		return moveFileList.isDisplayed();
+		
 	}
 
 }

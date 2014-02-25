@@ -5,7 +5,7 @@ import org.testng.annotations.*;
 import com.bs.selenium.model.User;
 import org.testng.Assert;
 
-//import static org.junit.Assert.*;
+
 
 public class LoginTest extends com.bs.selenium.pages.TestBase {
 

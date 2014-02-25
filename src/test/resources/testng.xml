@@ -27,5 +27,12 @@
 		<classes>
 		    <class name="com.bs.selenium.layout.LayoutTest"/>
 		</classes>
-	</test>  		 		
+	</test>  
+			
+	<test name="Test5">
+		<parameter name="path" value="/"/>
+		<classes>
+		    <class name="com.bs.selenium.functional.ClickToggleButtonTest"/>
+		</classes>
+	</test>  	 		
 </suite>

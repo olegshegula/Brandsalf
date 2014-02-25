@@ -152,6 +152,13 @@ public class UserHelper2 extends DriverBasedHelper implements UserHelper {
 		.setfoldernameField(foldername.getName())
 		.clickAddButton();
 	}
+
+	@Override
+	public boolean isToggled() {		
+		return pages.internalPage.ensurePageLoaded()
+				.clickToggleButton()
+				.isElementDisplayed();
+	}
 }
 
 // assertTrue(layoutBugs.size() ==1);

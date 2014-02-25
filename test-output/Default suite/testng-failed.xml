@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.bs.selenium.functional.AddNewFolderTest">
+      <class name="com.bs.selenium.functional.ClickToggleButtonTest">
         <methods>
           <include name="init"/>
-          <include name="stop"/>
           <include name="mayBeLogout"/>
-          <include name="testAddNewFolderforProjectOk"/>
+          <include name="stop"/>
+          <include name="testToggleButton"/>
         </methods>
-      </class> <!-- com.bs.selenium.functional.AddNewFolderTest -->
+      </class> <!-- com.bs.selenium.functional.ClickToggleButtonTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
