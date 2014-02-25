@@ -17,8 +17,16 @@ public class LayoutTest extends TestBase {
 	}
 
 	@Test
-	public void testLoginPageNegative() throws Exception {
+	public void testLoginPageNegativeWithoutLogin() throws Exception {
 		User user = new User().setLogin("").setPassword("123qweasd");
+		app.getUserHelper().loginAs(user);
+		assertTrue(app.getUserHelper().hasNoLayoutBugs());
+
+	}
+	
+	@Test
+	public void testLoginPageNegativeWithoutPasswd() throws Exception {
+		User user = new User().setLogin("oleg").setPassword("");
 		app.getUserHelper().loginAs(user);
 		assertTrue(app.getUserHelper().hasNoLayoutBugs());
 

@@ -20,8 +20,7 @@ public class LoginTest extends com.bs.selenium.pages.TestBase {
   @Test
   public void testLoginOK() throws Exception {
     User user = new User().setLogin("oleg").setPassword("123qweasd");
-    app.getUserHelper().loginAs(user);
-    
+    app.getUserHelper().loginAs(user);    
     Assert.assertTrue(app.getUserHelper().isLoggedInAs(user));
         
   }
