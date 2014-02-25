@@ -13,6 +13,7 @@ public interface UserHelper {
 	void edituserprofile(User user);	
 	int getNumbersofLayoutBags() throws Exception;	
 	boolean hasNoLayoutBugs() throws Exception;
-	void createFolder(Folder foldername);
+	void createFolderForProject(Folder foldername);
 	boolean isFolderCreated(Folder foldername);
+	void createFolderForTemplate(Folder foldername);
 }

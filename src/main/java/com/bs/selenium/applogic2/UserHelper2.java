@@ -107,16 +107,18 @@ public class UserHelper2 extends DriverBasedHelper implements UserHelper {
 	}
 
 	@Override
-	public void createFolder(Folder foldername) {
-		pages.internalPage.ensurePageLoaded().clickProjectLink()
-				.ensurePageLoaded().setfoldernameField(foldername.getName())
+	public void createFolderForProject(Folder foldername) {
+		pages.internalPage.ensurePageLoaded()
+				.clickProjectLink()
+				.ensurePageLoaded()
+				.setfoldernameField(foldername.getName())
 				.clickAddButton();
 
 	}
 
 	@Override
 	public boolean isFolderCreated(Folder foldername) {
-		pages.internalPage.ensurePageLoaded().clickProjectLink();
+		
 		List<String> actualLinkList = new ArrayList<String>();
 
 		List<String> expectedList = Arrays.asList(foldername.getName());
@@ -131,6 +133,15 @@ public class UserHelper2 extends DriverBasedHelper implements UserHelper {
 
 		return actualLinkList.containsAll(expectedList);
 
+	}
+
+	@Override
+	public void createFolderForTemplate(Folder foldername) {
+		pages.internalPage.ensurePageLoaded()
+		.clickTemplatetLink()
+		.ensurePageLoaded()
+		.setfoldernameField(foldername.getName())
+		.clickAddButton();
 	}
 }
 
