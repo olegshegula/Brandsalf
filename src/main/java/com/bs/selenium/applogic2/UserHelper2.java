@@ -159,6 +159,14 @@ public class UserHelper2 extends DriverBasedHelper implements UserHelper {
 				.clickToggleButton()
 				.isElementDisplayed();
 	}
+
+	@Override
+	public void avatarUpload() {
+		pages.userProfilePage.ensurePageLoaded()
+		.uploadGigFile()
+		.clickSubmitButton();
+		
+	}
 }
 
 // assertTrue(layoutBugs.size() ==1);

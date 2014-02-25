@@ -15,34 +15,39 @@ public class UserProfilePage extends InternalPage {
 	@FindBy(id = "Users_video")
 	private WebElement uservideoField;
 
-	
 	@FindBy(id = "Users_fio")
 	private WebElement usernameField;
-	
+
 	@FindBy(id = "Users_username")
 	private WebElement userloginField;
-	
+
 	@FindBy(id = "Users_phone")
 	private WebElement userphoneField;
 
 	@FindBy(id = "Users_mail")
-	private WebElement emailField;	
-	
+	private WebElement emailField;
+
 	@FindBy(id = "Users_password")
 	private WebElement passwordField;
 
 	@FindBy(id = "Users_password2")
-	private WebElement password2Field;	
-	
+	private WebElement password2Field;
+
 	@FindBy(xpath = "//input[@type='submit']")
 	private WebElement submitButton;
-	
-	
-	
-	//public String getRole() {
-	//		return permissionDropdown().getFirstSelectedOption().getText();
-	//}
-	
+
+	@FindBy(id = "Users_icon")
+	private WebElement fileInput;
+
+	// public String getRole() {
+	// return permissionDropdown().getFirstSelectedOption().getText();
+	// }
+
+	public UserProfilePage uploadGigFile() {
+		fileInput.sendKeys("c:\\data\1gif.gif");
+		return this;
+	}
+
 	public String getUsername() {
 		return userloginField.getAttribute("value");
 	}
@@ -50,36 +55,33 @@ public class UserProfilePage extends InternalPage {
 	public String getEmail() {
 		return emailField.getAttribute("value");
 	}
-	///////////////////////////////////////////////
-	
-	
-	
+
+	// /////////////////////////////////////////////
+
 	public UserProfilePage setuservideoField(String text) {
 		uservideoField.clear();
 		uservideoField.sendKeys(text);
 		return this;
 	}
-	
+
 	public UserProfilePage setusernameField(String text) {
 		usernameField.clear();
 		usernameField.sendKeys(text);
 		return this;
 	}
-	
+
 	public UserProfilePage setuserloginField(String text) {
 		userloginField.clear();
 		userloginField.sendKeys(text);
 		return this;
 	}
-	
-	
+
 	public UserProfilePage setuserphoneField(String text) {
 		userphoneField.clear();
 		userphoneField.sendKeys(text);
 		return this;
-	}	
-	
-	
+	}
+
 	public UserProfilePage setEmailField(String text) {
 		emailField.clear();
 		emailField.sendKeys(text);
@@ -93,16 +95,14 @@ public class UserProfilePage extends InternalPage {
 	}
 
 	public UserProfilePage setPassword2(String text) {
-		password2Field.clear();		
+		password2Field.clear();
 		password2Field.sendKeys(text);
 		return this;
 	}
-	
+
 	public void clickSubmitButton() {
 		submitButton.click();
 	}
-
-	
 
 	public UserProfilePage ensurePageLoaded() {
 		super.ensurePageLoaded();
@@ -110,5 +110,5 @@ public class UserProfilePage extends InternalPage {
 				.xpath("//h4[text()='Редагування профілю']")));
 		return this;
 	}
-	
+
 }

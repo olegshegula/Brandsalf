@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.bs.selenium.functional.ClickToggleButtonTest">
+      <class name="com.bs.selenium.functional.EditProfileTest">
         <methods>
           <include name="init"/>
-          <include name="mayBeLogout"/>
           <include name="stop"/>
-          <include name="testToggleButton"/>
+          <include name="mayBeLogout"/>
+          <include name="testLoadAvatarGifPositive"/>
         </methods>
-      </class> <!-- com.bs.selenium.functional.ClickToggleButtonTest -->
+      </class> <!-- com.bs.selenium.functional.EditProfileTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

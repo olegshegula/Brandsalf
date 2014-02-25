@@ -36,4 +36,41 @@ public class EditProfileTest extends com.bs.selenium.pages.TestBase {
 		    Assert.assertTrue(app.getUserHelper().isLoggedInAs(correctuser));
 
 	}
+	
+	@Test
+	public void testLoadAvatarPngPositiv() throws Exception {
+
+		
+
+	}
+	
+	@Test
+	public void testLoadAvatarJpgPositiv() throws Exception {
+
+		
+
+	}
+	
+	@Test
+	public void testLoadAvatarJpegPositiv() throws Exception {
+
+		
+
+	}
+	
+	@Test
+	public void testLoadAvatarGifPositive() throws Exception {
+		User user = new User().setLogin("oleg").setPassword("123qweasd");
+	    app.getUserHelper().loginAs(user);    
+	    app.getNavigationHelper().gotoUserProfilePage();
+	    app.getUserHelper().avatarUpload(); 
+
+	}
+	
+	@Test
+	public void testLoadAvatarNegative() throws Exception {
+
+		
+
+	}
 }
