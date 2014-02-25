@@ -16,4 +16,5 @@ public interface UserHelper {
 	void createFolderForProject(Folder foldername);
 	boolean isFolderCreated(Folder foldername);
 	void createFolderForTemplate(Folder foldername);
+	void createFolderForOffers(Folder foldername);
 }

@@ -143,6 +143,15 @@ public class UserHelper2 extends DriverBasedHelper implements UserHelper {
 		.setfoldernameField(foldername.getName())
 		.clickAddButton();
 	}
+
+	@Override
+	public void createFolderForOffers(Folder foldername) {
+		pages.internalPage.ensurePageLoaded()
+		.clickOffersLink()
+		.ensurePageLoaded()
+		.setfoldernameField(foldername.getName())
+		.clickAddButton();
+	}
 }
 
 // assertTrue(layoutBugs.size() ==1);
