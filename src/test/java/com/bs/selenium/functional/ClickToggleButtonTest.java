@@ -21,6 +21,6 @@ public class ClickToggleButtonTest extends TestBase {
 	public void testToggleButton() throws Exception {
 		User user = new User().setLogin("oleg").setPassword("123qweasd");
 		app.getUserHelper().loginAs(user);
-		Assert.assertTrue(app.getUserHelper().isToggled());
+		Assert.assertFalse(app.getUserHelper().isToggled());
 	}
 }

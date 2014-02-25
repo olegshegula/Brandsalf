@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Feb 25 12:03:32 EET 2014</td>
+<td>Started on:</td><td>Tue Feb 25 13:02:21 EET 2014</td>
 </tr>
-<tr><td>Total time:</td><td>27 seconds (27884 ms)</td>
+<tr><td>Total time:</td><td>10 seconds (10941 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,16 +76,11 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.bs.selenium.functional.ClickToggleButtonTest.testToggleButton()'><b>testToggleButton</b><br>Test class: com.bs.selenium.functional.ClickToggleButtonTest</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: Timed out after 20 seconds. Unable to locate the element
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.39.0&apos;, revision: &apos;14fa800511cc5d66d426e08b0b2ab926c7ed7398&apos;, time: &apos;2013-12-16 13:18:38&apos;
-System info: host: &apos;03-001-0009923&apos;, ip: &apos;169.254.43.99&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_17&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.pagefactory.AjaxElementLocator.findElement(AjaxElementLocator.java:72)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:34)
-	at com.sun.proxy.$Proxy10.isDisplayed(Unknown Source)
-	at com.bs.selenium.pagesall.InternalPage.isElementDisplayed(InternalPage.java:89)
-	at com.bs.selenium.applogic2.UserHelper2.isToggled(UserHelper2.java:160)
+<td><div><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertFalse(Assert.java:64)
+	at org.junit.Assert.assertFalse(Assert.java:74)
 	at com.bs.selenium.functional.ClickToggleButtonTest.testToggleButton(ClickToggleButtonTest.java:24)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -111,26 +106,12 @@ Driver info: driver.version: unknown
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-Caused by: org.openqa.selenium.NoSuchElementException: Element is not usable
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.39.0&apos;, revision: &apos;14fa800511cc5d66d426e08b0b2ab926c7ed7398&apos;, time: &apos;2013-12-16 13:18:38&apos;
-System info: host: &apos;03-001-0009923&apos;, ip: &apos;169.254.43.99&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_17&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.pagefactory.AjaxElementLocator$SlowLoadingElement.isLoaded(AjaxElementLocator.java:142)
-	at org.openqa.selenium.support.ui.SlowLoadableComponent.get(SlowLoadableComponent.java:70)
-	at org.openqa.selenium.support.pagefactory.AjaxElementLocator.findElement(AjaxElementLocator.java:70)
-	... 29 more
-</pre></div><a href='#' onClick='toggleBox("stack-trace503433561", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace503433561'><pre>org.openqa.selenium.NoSuchElementException: Timed out after 20 seconds. Unable to locate the element
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.39.0&apos;, revision: &apos;14fa800511cc5d66d426e08b0b2ab926c7ed7398&apos;, time: &apos;2013-12-16 13:18:38&apos;
-System info: host: &apos;03-001-0009923&apos;, ip: &apos;169.254.43.99&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_17&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.pagefactory.AjaxElementLocator.findElement(AjaxElementLocator.java:72)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:34)
-	at com.sun.proxy.$Proxy10.isDisplayed(Unknown Source)
-	at com.bs.selenium.pagesall.InternalPage.isElementDisplayed(InternalPage.java:89)
-	at com.bs.selenium.applogic2.UserHelper2.isToggled(UserHelper2.java:160)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1303555047", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1303555047'><pre>java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertFalse(Assert.java:64)
+	at org.junit.Assert.assertFalse(Assert.java:74)
 	at com.bs.selenium.functional.ClickToggleButtonTest.testToggleButton(ClickToggleButtonTest.java:24)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -156,18 +137,9 @@ Driver info: driver.version: unknown
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-Caused by: org.openqa.selenium.NoSuchElementException: Element is not usable
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.39.0&apos;, revision: &apos;14fa800511cc5d66d426e08b0b2ab926c7ed7398&apos;, time: &apos;2013-12-16 13:18:38&apos;
-System info: host: &apos;03-001-0009923&apos;, ip: &apos;169.254.43.99&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_17&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.pagefactory.AjaxElementLocator$SlowLoadingElement.isLoaded(AjaxElementLocator.java:142)
-	at org.openqa.selenium.support.ui.SlowLoadableComponent.get(SlowLoadableComponent.java:70)
-	at org.openqa.selenium.support.pagefactory.AjaxElementLocator.findElement(AjaxElementLocator.java:70)
-	... 29 more
 </pre></div></td>
-<td>23</td>
-<td>com.bs.selenium.functional.ClickToggleButtonTest@13417588</td></tr>
+<td>5</td>
+<td>com.bs.selenium.functional.ClickToggleButtonTest@38653ad5</td></tr>
 </table><p>
 </body>
 </html>

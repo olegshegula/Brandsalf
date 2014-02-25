@@ -48,7 +48,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\shcegula-os\AppData\Local\Temp\testng-eclipse--1873496272\testng-customsuite.xml</span>
+                    <span>C:\Users\shcegula-os\AppData\Local\Temp\testng-eclipse--1397738148\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -127,16 +127,11 @@
                   <a name="testToggleButton">
                   </a> <!-- testToggleButton -->
                   <span class="method-name">testToggleButton</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Timed out after 20 seconds. Unable to locate the element
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.39.0&apos;, revision: &apos;14fa800511cc5d66d426e08b0b2ab926c7ed7398&apos;, time: &apos;2013-12-16 13:18:38&apos;
-System info: host: &apos;03-001-0009923&apos;, ip: &apos;169.254.43.99&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_17&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.pagefactory.AjaxElementLocator.findElement(AjaxElementLocator.java:72)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:34)
-	at com.sun.proxy.$Proxy10.isDisplayed(Unknown Source)
-	at com.bs.selenium.pagesall.InternalPage.isElementDisplayed(InternalPage.java:89)
-	at com.bs.selenium.applogic2.UserHelper2.isToggled(UserHelper2.java:160)
+                  <div class="stack-trace">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertFalse(Assert.java:64)
+	at org.junit.Assert.assertFalse(Assert.java:74)
 	at com.bs.selenium.functional.ClickToggleButtonTest.testToggleButton(ClickToggleButtonTest.java:24)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -162,15 +157,6 @@ Driver info: driver.version: unknown
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-Caused by: org.openqa.selenium.NoSuchElementException: Element is not usable
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;2.39.0&apos;, revision: &apos;14fa800511cc5d66d426e08b0b2ab926c7ed7398&apos;, time: &apos;2013-12-16 13:18:38&apos;
-System info: host: &apos;03-001-0009923&apos;, ip: &apos;169.254.43.99&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_17&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.pagefactory.AjaxElementLocator$SlowLoadingElement.isLoaded(AjaxElementLocator.java:142)
-	at org.openqa.selenium.support.ui.SlowLoadableComponent.get(SlowLoadableComponent.java:70)
-	at org.openqa.selenium.support.pagefactory.AjaxElementLocator.findElement(AjaxElementLocator.java:70)
-	... 29 more
 
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -180,7 +166,7 @@ Driver info: driver.version: unknown
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\shcegula-os\AppData\Local\Temp\testng-eclipse--1873496272\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\shcegula-os\AppData\Local\Temp\testng-eclipse--1397738148\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -189,7 +175,11 @@ Driver info: driver.version: unknown
 &lt;suite name=&quot;Default suite&quot;&gt;
   &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.bs.selenium.functional.ClickToggleButtonTest&quot;/&gt;
+      &lt;class name=&quot;com.bs.selenium.functional.ClickToggleButtonTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;testToggleButton&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.bs.selenium.functional.ClickToggleButtonTest --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -233,12 +223,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testToggleButton')
 data.setCell(0, 2, 'com.bs.selenium.functional.ClickToggleButtonTest')
-data.setCell(0, 3, 23042);
+data.setCell(0, 3, 5653);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 23 seconds</span>
+              <span class="suite-total-time">Total running time: 5 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -271,17 +261,17 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">mayBeLogout</span>
-                <span class="method-start">4748 ms</span>
+                <span class="method-start">5221 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testToggleButton</span>
-                <span class="method-start">4812 ms</span>
+                <span class="method-start">5263 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-suite after">
                 <span class="method-name">stop</span>
-                <span class="method-start">27927 ms</span>
+                <span class="method-start">10987 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

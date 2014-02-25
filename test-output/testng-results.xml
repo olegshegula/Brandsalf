@@ -2,39 +2,27 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="27884" started-at="2014-02-25T10:03:32Z" finished-at="2014-02-25T10:04:00Z">
+  <suite name="Default suite" duration-ms="10941" started-at="2014-02-25T11:02:21Z" finished-at="2014-02-25T11:02:31Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="27884" started-at="2014-02-25T10:03:32Z" finished-at="2014-02-25T10:04:00Z">
+    <test name="Default test" duration-ms="10941" started-at="2014-02-25T11:02:21Z" finished-at="2014-02-25T11:02:31Z">
       <class name="com.bs.selenium.functional.ClickToggleButtonTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.bs.selenium.functional.ClickToggleButtonTest@13417588]" name="init" is-config="true" duration-ms="4744" started-at="2014-02-25T12:03:32Z" finished-at="2014-02-25T12:03:36Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.bs.selenium.functional.ClickToggleButtonTest@38653ad5]" name="init" is-config="true" duration-ms="5215" started-at="2014-02-25T13:02:21Z" finished-at="2014-02-25T13:02:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="mayBeLogout()[pri:0, instance:com.bs.selenium.functional.ClickToggleButtonTest@13417588]" name="mayBeLogout" is-config="true" duration-ms="64" started-at="2014-02-25T12:03:36Z" finished-at="2014-02-25T12:03:37Z">
+        <test-method status="PASS" signature="mayBeLogout()[pri:0, instance:com.bs.selenium.functional.ClickToggleButtonTest@38653ad5]" name="mayBeLogout" is-config="true" duration-ms="42" started-at="2014-02-25T13:02:26Z" finished-at="2014-02-25T13:02:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- mayBeLogout -->
-        <test-method status="FAIL" signature="testToggleButton()[pri:0, instance:com.bs.selenium.functional.ClickToggleButtonTest@13417588]" name="testToggleButton" duration-ms="23042" started-at="2014-02-25T12:03:37Z" finished-at="2014-02-25T12:04:00Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Timed out after 20 seconds. Unable to locate the element
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.39.0', revision: '14fa800511cc5d66d426e08b0b2ab926c7ed7398', time: '2013-12-16 13:18:38'
-System info: host: '03-001-0009923', ip: '169.254.43.99', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_17'
-Driver info: driver.version: unknown]]>
-            </message>
+        <test-method status="FAIL" signature="testToggleButton()[pri:0, instance:com.bs.selenium.functional.ClickToggleButtonTest@38653ad5]" name="testToggleButton" duration-ms="5653" started-at="2014-02-25T13:02:26Z" finished-at="2014-02-25T13:02:31Z">
+          <exception class="java.lang.AssertionError">
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Timed out after 20 seconds. Unable to locate the element
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.39.0', revision: '14fa800511cc5d66d426e08b0b2ab926c7ed7398', time: '2013-12-16 13:18:38'
-System info: host: '03-001-0009923', ip: '169.254.43.99', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_17'
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.pagefactory.AjaxElementLocator.findElement(AjaxElementLocator.java:72)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:34)
-	at com.sun.proxy.$Proxy10.isDisplayed(Unknown Source)
-	at com.bs.selenium.pagesall.InternalPage.isElementDisplayed(InternalPage.java:89)
-	at com.bs.selenium.applogic2.UserHelper2.isToggled(UserHelper2.java:160)
+              <![CDATA[java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertFalse(Assert.java:64)
+	at org.junit.Assert.assertFalse(Assert.java:74)
 	at com.bs.selenium.functional.ClickToggleButtonTest.testToggleButton(ClickToggleButtonTest.java:24)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -60,22 +48,13 @@ Driver info: driver.version: unknown
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-Caused by: org.openqa.selenium.NoSuchElementException: Element is not usable
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.39.0', revision: '14fa800511cc5d66d426e08b0b2ab926c7ed7398', time: '2013-12-16 13:18:38'
-System info: host: '03-001-0009923', ip: '169.254.43.99', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_17'
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.pagefactory.AjaxElementLocator$SlowLoadingElement.isLoaded(AjaxElementLocator.java:142)
-	at org.openqa.selenium.support.ui.SlowLoadableComponent.get(SlowLoadableComponent.java:70)
-	at org.openqa.selenium.support.pagefactory.AjaxElementLocator.findElement(AjaxElementLocator.java:70)
-	... 29 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testToggleButton -->
-        <test-method status="PASS" signature="stop()[pri:0, instance:com.bs.selenium.functional.ClickToggleButtonTest@13417588]" name="stop" is-config="true" duration-ms="1580" started-at="2014-02-25T12:04:00Z" finished-at="2014-02-25T12:04:01Z">
+        <test-method status="PASS" signature="stop()[pri:0, instance:com.bs.selenium.functional.ClickToggleButtonTest@38653ad5]" name="stop" is-config="true" duration-ms="1594" started-at="2014-02-25T13:02:32Z" finished-at="2014-02-25T13:02:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stop -->

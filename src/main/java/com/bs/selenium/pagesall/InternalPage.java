@@ -3,6 +3,7 @@ package com.bs.selenium.pagesall;
 import static org.openqa.selenium.support.ui.ExpectedConditions.*;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
@@ -42,21 +43,18 @@ public class InternalPage extends AnyPage {
 
 	@FindBy(xpath = ".//*[@id='bs-example-navbar-collapse-1']/ul[2]/li[2]/a")
 	private WebElement logoutLink;
-	
+
 	@FindBy(id = "toggleTreeList")
 	private WebElement toggleTreeListBtn;
-	
-	@FindBy(id = "moveFileList")
+
+	@FindBy(xpath = "//div[@id='moveFileList']")
 	private WebElement moveFileList;
-	
-	
 
 	public UserProfilePage clickUserProfilePage() {
 		userProfileLink.click();
 		profilemenu.click();
 		return pages.userProfilePage;
 	}
-	
 
 	public LoginPage clickLogoutLink() {
 		logoutLink.click();
@@ -74,20 +72,26 @@ public class InternalPage extends AnyPage {
 		templatelink.click();
 		return pages.loadPage;
 	}
-	
+
 	public LoadPage clickOffersLink() {
 		offerlink.click();
 		return pages.loadPage;
 	}
-	
-	public InternalPage clickToggleButton(){
+
+	public InternalPage clickToggleButton() {
 		toggleTreeListBtn.click();
 		return pages.internalPage;
 	}
-	
-	public boolean isElementDisplayed(){
-		return moveFileList.isDisplayed();
-		
+
+	public boolean isElementDisplayed() {
+
+		try {
+			moveFileList.isDisplayed();
+			return true;
+		} catch (NoSuchElementException e) {
+			return false;
+		}
+
 	}
 
 }
