@@ -41,6 +41,9 @@ public class InternalPage extends AnyPage {
 	@FindBy(xpath = "//div[@id='moveFileList']/a[text()='Пропозиції']")
 	private WebElement offerlink;
 
+	@FindBy(xpath = "//div[@id='moveFileList']/a[text()='Бізнес пропозиції']")
+	private WebElement bpropositionslink;
+	
 	@FindBy(xpath = ".//*[@id='bs-example-navbar-collapse-1']/ul[2]/li[2]/a")
 	private WebElement logoutLink;
 
@@ -74,6 +77,11 @@ public class InternalPage extends AnyPage {
 	}
 
 	public LoadPage clickOffersLink() {
+		bpropositionslink.click();
+		return pages.loadPage;
+	}
+	
+	public LoadPage clickBussinessPropLink() {
 		offerlink.click();
 		return pages.loadPage;
 	}

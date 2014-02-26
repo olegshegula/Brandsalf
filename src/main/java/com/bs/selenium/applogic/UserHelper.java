@@ -17,6 +17,7 @@ public interface UserHelper {
 	boolean isFolderCreated(Folder foldername);
 	void createFolderForTemplate(Folder foldername);
 	void createFolderForOffers(Folder foldername);
+	void createFolderForProposition(Folder foldername);
 	boolean isToggled();
 	void avatarUpload();
 }

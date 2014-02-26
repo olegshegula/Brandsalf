@@ -64,4 +64,20 @@ public class AddNewFolderTest extends TestBase {
 		Assert.assertTrue(app.getUserHelper().isFolderCreated(foldername));
 
 	}
+	
+	@Test
+	public void testAddNewFolderforBusinessPropositionsOk() throws Exception {
+		// Prepare data
+		Folder foldername = new Folder().setName("NewForlderAuto");
+		User user = new User().setLogin("oleg").setPassword("123qweasd");
+
+		// Add new folder to Project
+		app.getUserHelper().loginAs(user);
+		app.getUserHelper().createFolderForOffers(foldername);
+		// Check existing of folder
+		app.getNavigationHelper().openMainPage();
+		app.getNavigationHelper().openRelativeUrl("user/create/148417");
+		Assert.assertTrue(app.getUserHelper().isFolderCreated(foldername));
+
+	}
 }
