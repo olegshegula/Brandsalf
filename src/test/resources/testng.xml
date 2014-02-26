@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="LoginTest">
+<suite name="Tests">
 	<test verbose="2" name="testLoginOK">
 		<classes>
 			<class name="com.bs.selenium.functional.LoginTest">
@@ -18,7 +18,7 @@
 				</methods>
 			</class>
 		</classes>
-	</test> 	
+	</test>
 	<test verbose="2" name="testLoginFailedBlankLoginPasswd">
 		<classes>
 			<class name="com.bs.selenium.functional.LoginTest">
@@ -26,8 +26,8 @@
 					<include name="testLoginFailedBlankLoginPasswd" />
 				</methods>
 			</class>
-		</classes>		
-	</test> 	
+		</classes>
+	</test>
 	<test verbose="2" name="testLoginFailedWrongPasswd">
 		<classes>
 			<class name="com.bs.selenium.functional.LoginTest">
@@ -35,7 +35,7 @@
 					<include name="testLoginFailedWrongPasswd" />
 				</methods>
 			</class>
-		</classes>		
+		</classes>
 	</test>
 	<test verbose="2" name="testLoginFailedWrongLogin">
 		<classes>
@@ -44,17 +44,67 @@
 					<include name="testLoginFailedWrongLogin" />
 				</methods>
 			</class>
-		</classes>		
-	</test> 
+		</classes>
+	</test>
 	<test verbose="2" name="testEnterAllFieldsCorrect">
-	<classes>
-		<class name="com.bs.selenium.functional.EditProfileTest">
-			<methods>
-				<include name="testEnterAllFieldsCorrect" />
-			</methods>
-		</class>
-	</classes>
-</test> 		 	 	 		
+		<classes>
+			<class name="com.bs.selenium.functional.EditProfileTest">
+				<methods>
+					<include name="testEnterAllFieldsCorrect" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test verbose="2" name="testLoadAvatarGifPositive">
+		<classes>
+			<class name="com.bs.selenium.functional.EditProfileTest">
+				<methods>
+					<include name="testLoadAvatarGifPositive" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test verbose="2" name="testAddNewFolderforOffersOk">
+		<classes>
+			<class name="com.bs.selenium.functional.AddNewFolderTest">
+				<methods>
+					<include name="testAddNewFolderforOffersOk" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test verbose="2" name="testAddNewFolderforProjectOk">
+		<classes>
+			<class name="com.bs.selenium.functional.AddNewFolderTest">
+				<methods>
+					<include name="testAddNewFolderforProjectOk" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test verbose="2" name="testAddNewFolderforTemplateOk">
+		<classes>
+			<class name="com.bs.selenium.functional.AddNewFolderTest">
+				<methods>
+					<include name="testAddNewFolderforTemplateOk" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test verbose="2" name="testToggleButton">
+		<classes>
+			<class name="com.bs.selenium.functional.ClickToggleButtonTest">
+				<methods>
+					<include name="testToggleButton" />
+				</methods>
+			</class>
+		</classes>
+	</test>
 </suite>
 
  	

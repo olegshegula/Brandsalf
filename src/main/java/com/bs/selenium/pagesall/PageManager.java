@@ -25,7 +25,7 @@ public class PageManager {
   private <T extends Page> T initElements(T page) {
     //PageFactory.initElements(driver, page);
     //PageFactory.initElements(new AjaxElementLocatorFactory(driver, 10), page);
-    PageFactory.initElements(new DisplayedElementLocatorFactory(driver, 20), page);
+    PageFactory.initElements(new DisplayedElementLocatorFactory(driver, 30), page);
     return page;
   }
   
