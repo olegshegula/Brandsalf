@@ -1,38 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="Tests" verbose="5" data-provider-thread-count="1">
-	<test name="Test1">
-		<parameter name="path" value="/"/>
+<suite name="LoginTest">
+	<test verbose="2" name="testLoginOK">
 		<classes>
-		    <class name="com.bs.selenium.functional.LoginTest"/>
+			<class name="com.bs.selenium.functional.LoginTest">
+				<methods>
+					<include name="testLoginOK" />
+				</methods>
+			</class>
 		</classes>
-	</test>  
-	
-	<test name="Test2">
-		<parameter name="path" value="/"/>
+	</test>
+	<test verbose="2" name="testLogOut">
 		<classes>
-		    <class name="com.bs.selenium.functional.EditProfileTest"/>
+			<class name="com.bs.selenium.functional.LoginTest">
+				<methods>
+					<include name="testLogOut" />
+				</methods>
+			</class>
 		</classes>
-	</test>  
-	
-	<test name="Test3">
-		<parameter name="path" value="/"/>
+	</test> 	
+	<test verbose="2" name="testLoginFailedBlankLoginPasswd">
 		<classes>
-		    <class name="com.bs.selenium.functional.AddNewFolderTest"/>
+			<class name="com.bs.selenium.functional.LoginTest">
+				<methods>
+					<include name="testLoginFailedBlankLoginPasswd" />
+				</methods>
+			</class>
 		</classes>
-	</test> 
-	
-	<test name="Test4">
-		<parameter name="path" value="/"/>
-		<classes>
-		    <class name="com.bs.selenium.layout.LayoutTest"/>
-		</classes>
-	</test>  
-			
-	<test name="Test5">
-		<parameter name="path" value="/"/>
-		<classes>
-		    <class name="com.bs.selenium.functional.ClickToggleButtonTest"/>
-		</classes>
-	</test>  	 		
+	</test> 	 	 		
 </suite>

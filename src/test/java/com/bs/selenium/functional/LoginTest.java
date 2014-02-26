@@ -27,9 +27,8 @@ public class LoginTest extends com.bs.selenium.pages.TestBase {
 
   @Test
   public void testLoginFailedWrongPasswd() throws Exception {
-    User user = new User().setLogin("admin").setPassword("wrong");
-    app.getUserHelper().loginAs(user);
-    // assertFalse(app.getUserHelper().isLoggedIn());
+    User user = new User().setLogin("oleg").setPassword("wrong");
+    app.getUserHelper().loginAs(user);   
     Assert.assertTrue(app.getUserHelper().isNotLoggedIn());
   }
 
