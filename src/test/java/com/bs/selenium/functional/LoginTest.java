@@ -28,7 +28,7 @@ public class LoginTest extends com.bs.selenium.pages.TestBase {
   @Test
   public void testLoginFailedWrongPasswd() throws Exception {
     User user = new User().setLogin("oleg").setPassword("wrong");
-    app.getUserHelper().loginAs(user);   
+    app.getUserHelper().loginAs(user);    
     Assert.assertTrue(app.getUserHelper().isNotLoggedIn());
   }
 
@@ -36,7 +36,7 @@ public class LoginTest extends com.bs.selenium.pages.TestBase {
   @Test
   public void testLoginFailedWrongLogin() throws Exception {
     User user = new User().setLogin("sdf3").setPassword("123qweasd");
-    app.getUserHelper().loginAs(user);
+    app.getUserHelper().loginAs(user);   
     Assert.assertTrue(app.getUserHelper().isNotLoggedIn());
   }
   
@@ -44,7 +44,7 @@ public class LoginTest extends com.bs.selenium.pages.TestBase {
   @Test
   public void testLoginFailedBlankLoginPasswd() throws Exception {
     User user = new User().setLogin("").setPassword("");
-    app.getUserHelper().loginAs(user);
+    app.getUserHelper().loginAs(user);      
     Assert.assertTrue(app.getUserHelper().isNotLoggedIn());
   }
   

@@ -45,16 +45,16 @@
 				</methods>
 			</class>
 		</classes>		
-	</test> 	 	 	 		
+	</test> 
+	<test verbose="2" name="testEnterAllFieldsCorrect">
+	<classes>
+		<class name="com.bs.selenium.functional.EditProfileTest">
+			<methods>
+				<include name="testEnterAllFieldsCorrect" />
+			</methods>
+		</class>
+	</classes>
+</test> 		 	 	 		
 </suite>
-<suite name="EditProfileTest">
-<test verbose="2" name="testEnterAllFieldsCorrect">
-		<classes>
-			<class name="com.bs.selenium.functional.EditProfileTest">
-				<methods>
-					<include name="testEnterAllFieldsCorrect" />
-				</methods>
-			</class>
-		</classes>		
-	</test> 	 	
-</suite>suite>
+
+ 	
