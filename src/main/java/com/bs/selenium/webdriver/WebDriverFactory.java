@@ -37,7 +37,7 @@ public class WebDriverFactory {
 	public static final String OPERA = "opera";
 	public static final String INTERNET_EXPLORER = "ie";
 	public static final String HTML_UNIT = "htmlunit";
-	public static final String IPHONE = "iphone";
+	//public static final String IPHONE = "iphone";
 
 	/* Platform constants */
 	public static final String WINDOWS = "windows";
