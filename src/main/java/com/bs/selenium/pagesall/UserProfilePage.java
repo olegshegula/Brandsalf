@@ -40,7 +40,7 @@ public class UserProfilePage extends InternalPage {
 	private WebElement fileInput;
 
 	public UserProfilePage uploadGifFile() {
-		fileInput.sendKeys("c:\\data\1gif.gif");
+		fileInput.sendKeys("c:\\1gif.gif");
 		return this;
 	}
 	
