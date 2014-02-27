@@ -43,6 +43,21 @@ public class UserProfilePage extends InternalPage {
 		fileInput.sendKeys("c:\\data\1gif.gif");
 		return this;
 	}
+	
+	public UserProfilePage uploadPngFile() {
+		fileInput.sendKeys("c:\\data\3png.png");
+		return this;
+	}
+	
+	public UserProfilePage uploadJpgFile() {
+		fileInput.sendKeys("c:\\data\2jpg.jpg");
+		return this;
+	}
+	
+	public UserProfilePage uploadJpegFile() {
+		fileInput.sendKeys("c:\\data\4jpeg.jpeg");
+		return this;
+	}
 
 	public String getUsername() {
 		return userloginField.getAttribute("value");
