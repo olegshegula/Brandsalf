@@ -3,14 +3,12 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.bs.selenium.functional.EditProfileTest">
+      <class name="com.bs.selenium.functional.LoginTest">
         <methods>
           <include name="init"/>
-          <include name="stop"/>
-          <include name="mayBeLogout"/>
-          <include name="testLoadAvatarGifPositive"/>
+          <include name="testLoginOK"/>
         </methods>
-      </class> <!-- com.bs.selenium.functional.EditProfileTest -->
+      </class> <!-- com.bs.selenium.functional.LoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
