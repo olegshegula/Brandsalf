@@ -2,28 +2,28 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="29425" started-at="2014-02-27T06:38:15Z" finished-at="2014-02-27T06:38:44Z">
+  <suite name="Default suite" duration-ms="6766" started-at="2014-02-27T10:53:40Z" finished-at="2014-02-27T10:53:46Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="29425" started-at="2014-02-27T06:38:15Z" finished-at="2014-02-27T06:38:44Z">
-      <class name="com.bs.selenium.functional.AddNewFolderTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.bs.selenium.functional.AddNewFolderTest@cd3509c]" name="init" is-config="true" duration-ms="18738" started-at="2014-02-27T08:38:15Z" finished-at="2014-02-27T08:38:34Z">
+    <test name="Default test" duration-ms="6766" started-at="2014-02-27T10:53:40Z" finished-at="2014-02-27T10:53:46Z">
+      <class name="com.bs.selenium.functional.LoginTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.bs.selenium.functional.LoginTest@7c868269]" name="init" is-config="true" duration-ms="5793" started-at="2014-02-27T12:53:40Z" finished-at="2014-02-27T12:53:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="mayBeLogout()[pri:0, instance:com.bs.selenium.functional.AddNewFolderTest@cd3509c]" name="mayBeLogout" is-config="true" duration-ms="187" started-at="2014-02-27T08:38:34Z" finished-at="2014-02-27T08:38:34Z">
+        <test-method status="PASS" signature="mayBeLogout()[pri:0, instance:com.bs.selenium.functional.LoginTest@7c868269]" name="mayBeLogout" is-config="true" duration-ms="49" started-at="2014-02-27T12:53:45Z" finished-at="2014-02-27T12:53:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- mayBeLogout -->
-        <test-method status="PASS" signature="testAddNewFolderforBusinessPropositionsOk()[pri:0, instance:com.bs.selenium.functional.AddNewFolderTest@cd3509c]" name="testAddNewFolderforBusinessPropositionsOk" duration-ms="10484" started-at="2014-02-27T08:38:34Z" finished-at="2014-02-27T08:38:44Z">
+        <test-method status="PASS" signature="testLoginFailedWrongLogin()[pri:0, instance:com.bs.selenium.functional.LoginTest@7c868269]" name="testLoginFailedWrongLogin" duration-ms="893" started-at="2014-02-27T12:53:45Z" finished-at="2014-02-27T12:53:46Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testAddNewFolderforBusinessPropositionsOk -->
-        <test-method status="PASS" signature="stop()[pri:0, instance:com.bs.selenium.functional.AddNewFolderTest@cd3509c]" name="stop" is-config="true" duration-ms="437" started-at="2014-02-27T08:38:45Z" finished-at="2014-02-27T08:38:45Z">
+        </test-method> <!-- testLoginFailedWrongLogin -->
+        <test-method status="PASS" signature="stop()[pri:0, instance:com.bs.selenium.functional.LoginTest@7c868269]" name="stop" is-config="true" duration-ms="1633" started-at="2014-02-27T12:53:47Z" finished-at="2014-02-27T12:53:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stop -->
-      </class> <!-- com.bs.selenium.functional.AddNewFolderTest -->
+      </class> <!-- com.bs.selenium.functional.LoginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
