@@ -39,11 +39,7 @@ public class UserProfilePage extends InternalPage {
 	@FindBy(id = "Users_icon")
 	private WebElement fileInput;
 
-	// public String getRole() {
-	// return permissionDropdown().getFirstSelectedOption().getText();
-	// }
-
-	public UserProfilePage uploadGigFile() {
+	public UserProfilePage uploadGifFile() {
 		fileInput.sendKeys("c:\\data\1gif.gif");
 		return this;
 	}

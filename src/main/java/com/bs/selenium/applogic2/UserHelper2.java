@@ -163,7 +163,7 @@ public class UserHelper2 extends DriverBasedHelper implements UserHelper {
 	@Override
 	public void avatarUpload() {
 		pages.userProfilePage.ensurePageLoaded()
-		.uploadGigFile()
+		.uploadGifFile()
 		.clickSubmitButton();
 		
 	}

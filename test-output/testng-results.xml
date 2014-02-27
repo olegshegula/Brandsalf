@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="33155" started-at="2014-02-26T14:55:59Z" finished-at="2014-02-26T14:56:33Z">
+  <suite name="Default suite" duration-ms="29425" started-at="2014-02-27T06:38:15Z" finished-at="2014-02-27T06:38:44Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="33155" started-at="2014-02-26T14:55:59Z" finished-at="2014-02-26T14:56:33Z">
+    <test name="Default test" duration-ms="29425" started-at="2014-02-27T06:38:15Z" finished-at="2014-02-27T06:38:44Z">
       <class name="com.bs.selenium.functional.AddNewFolderTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.bs.selenium.functional.AddNewFolderTest@cd3509c]" name="init" is-config="true" duration-ms="22292" started-at="2014-02-26T16:56:00Z" finished-at="2014-02-26T16:56:22Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.bs.selenium.functional.AddNewFolderTest@cd3509c]" name="init" is-config="true" duration-ms="18738" started-at="2014-02-27T08:38:15Z" finished-at="2014-02-27T08:38:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="mayBeLogout()[pri:0, instance:com.bs.selenium.functional.AddNewFolderTest@cd3509c]" name="mayBeLogout" is-config="true" duration-ms="192" started-at="2014-02-26T16:56:22Z" finished-at="2014-02-26T16:56:22Z">
+        <test-method status="PASS" signature="mayBeLogout()[pri:0, instance:com.bs.selenium.functional.AddNewFolderTest@cd3509c]" name="mayBeLogout" is-config="true" duration-ms="187" started-at="2014-02-27T08:38:34Z" finished-at="2014-02-27T08:38:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- mayBeLogout -->
-        <test-method status="PASS" signature="testAddNewFolderforBusinessPropositionsOk()[pri:0, instance:com.bs.selenium.functional.AddNewFolderTest@cd3509c]" name="testAddNewFolderforBusinessPropositionsOk" duration-ms="10638" started-at="2014-02-26T16:56:22Z" finished-at="2014-02-26T16:56:33Z">
+        <test-method status="PASS" signature="testAddNewFolderforBusinessPropositionsOk()[pri:0, instance:com.bs.selenium.functional.AddNewFolderTest@cd3509c]" name="testAddNewFolderforBusinessPropositionsOk" duration-ms="10484" started-at="2014-02-27T08:38:34Z" finished-at="2014-02-27T08:38:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAddNewFolderforBusinessPropositionsOk -->
-        <test-method status="PASS" signature="stop()[pri:0, instance:com.bs.selenium.functional.AddNewFolderTest@cd3509c]" name="stop" is-config="true" duration-ms="457" started-at="2014-02-26T16:56:33Z" finished-at="2014-02-26T16:56:33Z">
+        <test-method status="PASS" signature="stop()[pri:0, instance:com.bs.selenium.functional.AddNewFolderTest@cd3509c]" name="stop" is-config="true" duration-ms="437" started-at="2014-02-27T08:38:45Z" finished-at="2014-02-27T08:38:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stop -->
