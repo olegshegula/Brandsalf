@@ -1,7 +1,6 @@
 package com.bs.selenium.applogic2;
 
 import java.io.File;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
@@ -11,6 +10,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
 import com.bs.selenium.applogic.UserHelper;
+import com.bs.selenium.model.Files;
 import com.bs.selenium.model.Folder;
 import com.bs.selenium.model.User;
 import com.bs.selenium.pagesall.UserProfilePage;
@@ -161,12 +161,14 @@ public class UserHelper2 extends DriverBasedHelper implements UserHelper {
 	}
 
 	@Override
-	public void avatarUpload() {
+	public void avatarUpload(Files path) {
 		pages.userProfilePage.ensurePageLoaded()
-		.uploadGifFile()
+		.uploadFile(path.getPath())
 		.clickSubmitButton();
 		
 	}
+	
+
 
 	@Override
 	public void createFolderForProposition(Folder foldername) {
@@ -176,6 +178,14 @@ public class UserHelper2 extends DriverBasedHelper implements UserHelper {
 		.setfoldernameField(foldername.getName())
 		.clickAddButton();
 		
+	}
+
+	@Override
+	public boolean isavatarUpload() {
+		
+		return pages.usercabinetPage
+				.ensurePageLoaded()
+				.getAvatarpath().isEmpty();
 	}
 }
 

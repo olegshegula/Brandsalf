@@ -1,5 +1,8 @@
 package com.bs.selenium.applogic;
 
+
+
+import com.bs.selenium.model.Files;
 import com.bs.selenium.model.Folder;
 import com.bs.selenium.model.User;
 
@@ -18,6 +21,7 @@ public interface UserHelper {
 	void createFolderForTemplate(Folder foldername);
 	void createFolderForOffers(Folder foldername);
 	void createFolderForProposition(Folder foldername);
-	boolean isToggled();
-	void avatarUpload();
+	boolean isToggled();	
+	void avatarUpload(Files path);
+	boolean isavatarUpload();
 }

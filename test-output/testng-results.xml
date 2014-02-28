@@ -2,114 +2,29 @@
 <testng-results skipped="1" failed="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="61115" started-at="2014-02-27T13:58:15Z" finished-at="2014-02-27T13:59:16Z">
+  <suite name="Default suite" duration-ms="3935" started-at="2014-02-28T13:25:21Z" finished-at="2014-02-28T13:25:25Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="61115" started-at="2014-02-27T13:58:15Z" finished-at="2014-02-27T13:59:16Z">
-      <class name="com.bs.selenium.functional.LoginTest">
-        <test-method status="FAIL" signature="init()[pri:0, instance:com.bs.selenium.functional.LoginTest@7c868269]" name="init" is-config="true" duration-ms="0" started-at="2014-02-27T15:58:15Z" finished-at="2014-02-27T15:58:15Z">
-          <exception class="org.openqa.selenium.WebDriverException">
+    <test name="Default test" duration-ms="3935" started-at="2014-02-28T13:25:21Z" finished-at="2014-02-28T13:25:25Z">
+      <class name="com.bs.selenium.functional.EditProfileTest">
+        <test-method status="FAIL" signature="init()[pri:0, instance:com.bs.selenium.functional.EditProfileTest@44a901f8]" name="init" is-config="true" duration-ms="0" started-at="2014-02-28T15:25:21Z" finished-at="2014-02-28T15:25:21Z">
+          <exception class="java.lang.NoSuchMethodError">
             <message>
-              <![CDATA[Failed to connect to binary FirefoxBinary(C:\Program Files (x86)\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
-*** LOG addons.manager: Application has been upgraded
-*** LOG addons.xpi: startup
-*** LOG addons.xpi: Skipping unavailable install location app-system-local
-*** LOG addons.xpi: Skipping unavailable install location app-system-share
-*** LOG addons.xpi: Ignoring file entry whose name is not a valid add-on ID: C:\Users\SHCEGU~1\AppData\Local\Temp\anonymous2452577166641797966webdriver-profile\extensions\webdriver-staging
-*** LOG addons.xpi: checkForChanges
-*** LOG addons.xpi-utils: Opening XPI database C:\Users\SHCEGU~1\AppData\Local\Temp\anonymous2452577166641797966webdriver-profile\extensions.json
-*** LOG addons.xpi: New add-on fxdriver@googlecode.com installed in app-profile
-*** Blocklist::_loadBlocklistFromFile: blocklist is disabled
-*** LOG addons.xpi-utils: Make addon app-profile:fxdriver@googlecode.com visible
-*** LOG DeferredSave/extensions.json: Save changes
-*** LOG DeferredSave/extensions.json: Save changes
-*** LOG addons.xpi: New add-on {972ce4c6-7e08-4474-a285-3208198ce6fd} installed in app-global
-*** LOG addons.xpi-utils: Make addon app-global:{972ce4c6-7e08-4474-a285-3208198ce6fd} visible
-*** LOG DeferredSave/extensions.json: Save changes
-*** LOG DeferredSave/extensions.json: Save changes
-*** LOG addons.xpi: Updating database with changes to installed add-ons
-*** LOG addons.xpi-utils: Updating add-on states
-*** LOG addons.xpi-utils: Writing add-ons list
-*** LOG DeferredSave/extensions.json: Starting timer
-*** LOG DeferredSave/extensions.json: Starting write
-*** LOG DeferredSave/extensions.json: Write succeeded
-*** LOG addons.xpi-utils: XPI Database saved, setting schema version preference to 15
-*** LOG addons.manager: shutdown
-*** LOG addons.xpi: shutdown
-*** LOG addons.xpi-utils: shutdown
-*** LOG addons.xpi: Notifying XPI shutdown observers
-*** LOG addons.manager: Async provider shutdown done
-*** LOG addons.xpi: startup
-*** LOG addons.xpi: Skipping unavailable install location app-system-local
-*** LOG addons.xpi: Skipping unavailable install location app-system-share
-*** LOG addons.xpi: Ignoring file entry whose name is not a valid add-on ID: C:\Users\SHCEGU~1\AppData\Local\Temp\anonymous2452577166641797966webdriver-profile\extensions\webdriver-staging
-*** LOG addons.xpi: checkForChanges
-*** LOG addons.xpi: No changes found
-JavaScript error: chrome://browser/content/urlbarBindings.xml, line 654: aUrl is undefined
-*** LOG addons.manager: shutdown
-*** LOG addons.xpi: shutdown
-*** LOG addons.xpi: Notifying XPI shutdown observers
-*** LOG addons.manager: Async provider shutdown done
-
-Build info: version: '2.31.0', revision: '1bd294d185a80fa4206dfeab80ba773c04ac33c0', time: '2013-02-27 13:51:26'
-System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_17'
-Driver info: driver.version: FirefoxDriver]]>
+              <![CDATA[org.openqa.selenium.support.pagefactory.AjaxElementLocator.<init>(Lorg/openqa/selenium/SearchContext;Ljava/lang/reflect/Field;I)V]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files (x86)\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
-*** LOG addons.manager: Application has been upgraded
-*** LOG addons.xpi: startup
-*** LOG addons.xpi: Skipping unavailable install location app-system-local
-*** LOG addons.xpi: Skipping unavailable install location app-system-share
-*** LOG addons.xpi: Ignoring file entry whose name is not a valid add-on ID: C:\Users\SHCEGU~1\AppData\Local\Temp\anonymous2452577166641797966webdriver-profile\extensions\webdriver-staging
-*** LOG addons.xpi: checkForChanges
-*** LOG addons.xpi-utils: Opening XPI database C:\Users\SHCEGU~1\AppData\Local\Temp\anonymous2452577166641797966webdriver-profile\extensions.json
-*** LOG addons.xpi: New add-on fxdriver@googlecode.com installed in app-profile
-*** Blocklist::_loadBlocklistFromFile: blocklist is disabled
-*** LOG addons.xpi-utils: Make addon app-profile:fxdriver@googlecode.com visible
-*** LOG DeferredSave/extensions.json: Save changes
-*** LOG DeferredSave/extensions.json: Save changes
-*** LOG addons.xpi: New add-on {972ce4c6-7e08-4474-a285-3208198ce6fd} installed in app-global
-*** LOG addons.xpi-utils: Make addon app-global:{972ce4c6-7e08-4474-a285-3208198ce6fd} visible
-*** LOG DeferredSave/extensions.json: Save changes
-*** LOG DeferredSave/extensions.json: Save changes
-*** LOG addons.xpi: Updating database with changes to installed add-ons
-*** LOG addons.xpi-utils: Updating add-on states
-*** LOG addons.xpi-utils: Writing add-ons list
-*** LOG DeferredSave/extensions.json: Starting timer
-*** LOG DeferredSave/extensions.json: Starting write
-*** LOG DeferredSave/extensions.json: Write succeeded
-*** LOG addons.xpi-utils: XPI Database saved, setting schema version preference to 15
-*** LOG addons.manager: shutdown
-*** LOG addons.xpi: shutdown
-*** LOG addons.xpi-utils: shutdown
-*** LOG addons.xpi: Notifying XPI shutdown observers
-*** LOG addons.manager: Async provider shutdown done
-*** LOG addons.xpi: startup
-*** LOG addons.xpi: Skipping unavailable install location app-system-local
-*** LOG addons.xpi: Skipping unavailable install location app-system-share
-*** LOG addons.xpi: Ignoring file entry whose name is not a valid add-on ID: C:\Users\SHCEGU~1\AppData\Local\Temp\anonymous2452577166641797966webdriver-profile\extensions\webdriver-staging
-*** LOG addons.xpi: checkForChanges
-*** LOG addons.xpi: No changes found
-JavaScript error: chrome://browser/content/urlbarBindings.xml, line 654: aUrl is undefined
-*** LOG addons.manager: shutdown
-*** LOG addons.xpi: shutdown
-*** LOG addons.xpi: Notifying XPI shutdown observers
-*** LOG addons.manager: Async provider shutdown done
-
-Build info: version: '2.31.0', revision: '1bd294d185a80fa4206dfeab80ba773c04ac33c0', time: '2013-02-27 13:51:26'
-System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_17'
-Driver info: driver.version: FirefoxDriver
-	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:118)
-	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:244)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:110)
-	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:188)
-	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:183)
-	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:179)
-	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:96)
-	at com.bs.selenium.webdriver.WebDriverFactory.getInstance(WebDriverFactory.java:168)
-	at com.bs.selenium.webdriver.WebDriverFactory.getInstance(WebDriverFactory.java:77)
-	at com.bs.selenium.applogic2.ApplicationManager2.<init>(ApplicationManager2.java:34)
+              <![CDATA[java.lang.NoSuchMethodError: org.openqa.selenium.support.pagefactory.AjaxElementLocator.<init>(Lorg/openqa/selenium/SearchContext;Ljava/lang/reflect/Field;I)V
+	at com.bs.selenium.pagesall.DisplayedElementLocator.<init>(DisplayedElementLocator.java:11)
+	at com.bs.selenium.pagesall.DisplayedElementLocatorFactory.createLocator(DisplayedElementLocatorFactory.java:19)
+	at org.openqa.selenium.support.pagefactory.DefaultFieldDecorator.decorate(DefaultFieldDecorator.java:54)
+	at org.openqa.selenium.support.PageFactory.proxyFields(PageFactory.java:115)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:107)
+	at org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:94)
+	at com.bs.selenium.pagesall.PageManager.initElements(PageManager.java:32)
+	at com.bs.selenium.pagesall.PageManager.<init>(PageManager.java:20)
+	at com.bs.selenium.applogic2.DriverBasedHelper.<init>(DriverBasedHelper.java:17)
+	at com.bs.selenium.applogic2.UserHelper2.<init>(UserHelper2.java:25)
+	at com.bs.selenium.applogic2.ApplicationManager2.<init>(ApplicationManager2.java:38)
 	at com.bs.selenium.pages.TestBase.init(TestBase.java:18)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -135,68 +50,25 @@ Driver info: driver.version: FirefoxDriver
 	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
-Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
-*** LOG addons.manager: Application has been upgraded
-*** LOG addons.xpi: startup
-*** LOG addons.xpi: Skipping unavailable install location app-system-local
-*** LOG addons.xpi: Skipping unavailable install location app-system-share
-*** LOG addons.xpi: Ignoring file entry whose name is not a valid add-on ID: C:\Users\SHCEGU~1\AppData\Local\Temp\anonymous2452577166641797966webdriver-profile\extensions\webdriver-staging
-*** LOG addons.xpi: checkForChanges
-*** LOG addons.xpi-utils: Opening XPI database C:\Users\SHCEGU~1\AppData\Local\Temp\anonymous2452577166641797966webdriver-profile\extensions.json
-*** LOG addons.xpi: New add-on fxdriver@googlecode.com installed in app-profile
-*** Blocklist::_loadBlocklistFromFile: blocklist is disabled
-*** LOG addons.xpi-utils: Make addon app-profile:fxdriver@googlecode.com visible
-*** LOG DeferredSave/extensions.json: Save changes
-*** LOG DeferredSave/extensions.json: Save changes
-*** LOG addons.xpi: New add-on {972ce4c6-7e08-4474-a285-3208198ce6fd} installed in app-global
-*** LOG addons.xpi-utils: Make addon app-global:{972ce4c6-7e08-4474-a285-3208198ce6fd} visible
-*** LOG DeferredSave/extensions.json: Save changes
-*** LOG DeferredSave/extensions.json: Save changes
-*** LOG addons.xpi: Updating database with changes to installed add-ons
-*** LOG addons.xpi-utils: Updating add-on states
-*** LOG addons.xpi-utils: Writing add-ons list
-*** LOG DeferredSave/extensions.json: Starting timer
-*** LOG DeferredSave/extensions.json: Starting write
-*** LOG DeferredSave/extensions.json: Write succeeded
-*** LOG addons.xpi-utils: XPI Database saved, setting schema version preference to 15
-*** LOG addons.manager: shutdown
-*** LOG addons.xpi: shutdown
-*** LOG addons.xpi-utils: shutdown
-*** LOG addons.xpi: Notifying XPI shutdown observers
-*** LOG addons.manager: Async provider shutdown done
-*** LOG addons.xpi: startup
-*** LOG addons.xpi: Skipping unavailable install location app-system-local
-*** LOG addons.xpi: Skipping unavailable install location app-system-share
-*** LOG addons.xpi: Ignoring file entry whose name is not a valid add-on ID: C:\Users\SHCEGU~1\AppData\Local\Temp\anonymous2452577166641797966webdriver-profile\extensions\webdriver-staging
-*** LOG addons.xpi: checkForChanges
-*** LOG addons.xpi: No changes found
-JavaScript error: chrome://browser/content/urlbarBindings.xml, line 654: aUrl is undefined
-*** LOG addons.manager: shutdown
-*** LOG addons.xpi: shutdown
-*** LOG addons.xpi: Notifying XPI shutdown observers
-*** LOG addons.manager: Async provider shutdown done
-
-	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:106)
-	... 34 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          </exception> <!-- java.lang.NoSuchMethodError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="SKIP" signature="mayBeLogout()[pri:0, instance:com.bs.selenium.functional.LoginTest@7c868269]" name="mayBeLogout" is-config="true" duration-ms="0" started-at="2014-02-27T15:59:16Z" finished-at="2014-02-27T15:59:16Z">
+        <test-method status="SKIP" signature="mayBeLogout()[pri:0, instance:com.bs.selenium.functional.EditProfileTest@44a901f8]" name="mayBeLogout" is-config="true" duration-ms="0" started-at="2014-02-28T15:25:25Z" finished-at="2014-02-28T15:25:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- mayBeLogout -->
-        <test-method status="SKIP" signature="testLoginOK()[pri:0, instance:com.bs.selenium.functional.LoginTest@7c868269]" name="testLoginOK" duration-ms="1" started-at="2014-02-27T15:59:16Z" finished-at="2014-02-27T15:59:16Z">
+        <test-method status="SKIP" signature="testLoadAvatarJpegPositiv()[pri:0, instance:com.bs.selenium.functional.EditProfileTest@44a901f8]" name="testLoadAvatarJpegPositiv" duration-ms="2" started-at="2014-02-28T15:25:25Z" finished-at="2014-02-28T15:25:25Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLoginOK -->
-        <test-method status="SKIP" signature="stop()[pri:0, instance:com.bs.selenium.functional.LoginTest@7c868269]" name="stop" is-config="true" duration-ms="0" started-at="2014-02-27T15:59:16Z" finished-at="2014-02-27T15:59:16Z">
+        </test-method> <!-- testLoadAvatarJpegPositiv -->
+        <test-method status="SKIP" signature="stop()[pri:0, instance:com.bs.selenium.functional.EditProfileTest@44a901f8]" name="stop" is-config="true" duration-ms="0" started-at="2014-02-28T15:25:26Z" finished-at="2014-02-28T15:25:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stop -->
-      </class> <!-- com.bs.selenium.functional.LoginTest -->
+      </class> <!-- com.bs.selenium.functional.EditProfileTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

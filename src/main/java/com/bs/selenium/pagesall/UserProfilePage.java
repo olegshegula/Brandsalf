@@ -39,26 +39,12 @@ public class UserProfilePage extends InternalPage {
 	@FindBy(id = "Users_icon")
 	private WebElement fileInput;
 
-	public UserProfilePage uploadGifFile() {
-		fileInput.sendKeys("c:\\1gif.gif");
+	public UserProfilePage uploadFile(String text) {
+		fileInput.sendKeys(text);
 		return this;
+		
 	}
 	
-	public UserProfilePage uploadPngFile() {
-		fileInput.sendKeys("c:\\data\3png.png");
-		return this;
-	}
-	
-	public UserProfilePage uploadJpgFile() {
-		fileInput.sendKeys("c:\\data\2jpg.jpg");
-		return this;
-	}
-	
-	public UserProfilePage uploadJpegFile() {
-		fileInput.sendKeys("c:\\data\4jpeg.jpeg");
-		return this;
-	}
-
 	public String getUsername() {
 		return userloginField.getAttribute("value");
 	}
@@ -111,8 +97,9 @@ public class UserProfilePage extends InternalPage {
 		return this;
 	}
 
-	public void clickSubmitButton() {
+	public UserCabinetPage clickSubmitButton() {
 		submitButton.click();
+		return pages.usercabinetPage;
 	}
 
 	public UserProfilePage ensurePageLoaded() {
