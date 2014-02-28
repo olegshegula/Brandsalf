@@ -32,6 +32,7 @@ public class ApplicationManager2 implements ApplicationManager {
     String password = PropertyLoader.loadProperty("user.password");
     
     driver = WebDriverFactory.getInstance(gridHubUrl, browser, username, password);
+    driver.manage().deleteAllCookies();
     //driver.manage().window().maximize();
     // driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
