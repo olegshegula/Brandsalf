@@ -34,6 +34,23 @@ public class AddNewFolderTest extends TestBase {
 	}
 
 	@Test
+	public void testAddNewFolderforProjectNegative() throws Exception {
+		// Prepare data
+		Folder foldername = new Folder()
+				.setName("AutoTestAutoTestAutoTestAutoTestAutoTestAutoTestAutoTestAutoTestAutoTestAutoTestAutoTestAutoTestAutoTestAutoTestAutoTestAutoTestAutoTestAutoTestAutoTestAutoTestAutoTestAutoTestAutoTestAutoTestAutoTestAutoTestAutoTestAutoTestAutoTestAutoTestAutoTestAutoTestAutoTestAutoTestAutoTestAutoTestAutoTestAutoTestAutoTestAutoTestAutoTestAutoTestAutoTestAutoTestAutoTestAutoTestAutoTestAutoTestAutoTestAutoTestAutoTestAutoTestAutoTestAutoTestAutoTestAutoTestAutoTestAutoTestAutoTestAutoTestAutoTestAutoTestAutoTestAutoTestAutoTestAutoTestAutoTestAutoTestAutoTestAutoTestAutoTestAutoTestAutoTestAutoTestAutoTestAutoTestAutoTestAutoTest");
+		User user = new User().setLogin("oleg").setPassword("123qweasd");
+
+		// Add new folder to Project
+		app.getUserHelper().loginAs(user);
+		app.getUserHelper().createFolderForProject(foldername);
+		// Check existing of folder
+		app.getNavigationHelper().openMainPage();
+		app.getNavigationHelper().openRelativeUrl("user/create/1");
+		Assert.assertTrue(app.getUserHelper().isFolderCreated(foldername));
+
+	}
+
+	@Test
 	public void testAddNewFolderforTemplateOk() throws Exception {
 		// Prepare data
 		Folder foldername = new Folder().setName("AutoTestTemplate");
@@ -64,7 +81,7 @@ public class AddNewFolderTest extends TestBase {
 		Assert.assertTrue(app.getUserHelper().isFolderCreated(foldername));
 
 	}
-	
+
 	@Test
 	public void testAddNewFolderforBusinessPropositionsOk() throws Exception {
 		// Prepare data

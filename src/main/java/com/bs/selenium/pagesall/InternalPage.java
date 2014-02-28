@@ -52,6 +52,9 @@ public class InternalPage extends AnyPage {
 
 	@FindBy(xpath = "//div[@id='moveFileList']")
 	private WebElement moveFileList;
+	
+	@FindBy(xpath = "//*[@id='linkToCabinet']/a[text()='Особистий кабінет']")
+	private WebElement usercabinetlink;
 
 	public UserProfilePage clickUserProfilePage() {
 		userProfileLink.click();
@@ -100,6 +103,11 @@ public class InternalPage extends AnyPage {
 			return false;
 		}
 
+	}
+
+	public UserCabinetPage clickUserCabinetPage() {
+		usercabinetlink.click();
+		return pages.usercabinetPage;
 	}
 
 }

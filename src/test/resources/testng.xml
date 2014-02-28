@@ -155,6 +155,82 @@
 			</class>
 		</classes>
 	</test>
+	
+	
+	<test verbose="2" name="testLoginPageOk">
+		<classes>
+			<class name="com.bs.selenium.layout.LayoutTest">
+				<methods>
+					<include name="testLoginPageOk" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test verbose="2" name="testLoginPageNegativeWithoutLogin">
+		<classes>
+			<class name="com.bs.selenium.layout.LayoutTest">
+				<methods>
+					<include name="testLoginPageNegativeWithoutLogin" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test verbose="2" name="testLoginPageNegativeWithoutPasswd">
+		<classes>
+			<class name="com.bs.selenium.layout.LayoutTest">
+				<methods>
+					<include name="testLoginPageNegativeWithoutPasswd" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test verbose="2" name="testInternalPagePositive">
+		<classes>
+			<class name="com.bs.selenium.layout.LayoutTest">
+				<methods>
+					<include name="testInternalPagePositive" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test verbose="2" name="testUserProfilePageOK">
+		<classes>
+			<class name="com.bs.selenium.layout.LayoutTest">
+				<methods>
+					<include name="testUserProfilePageOK" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test verbose="2" name="testUserCabinetPageOK">
+		<classes>
+			<class name="com.bs.selenium.layout.LayoutTest">
+				<methods>
+					<include name="testUserCabinetPageOK" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test verbose="2" name="testCreateNewFolderPageOK">
+		<classes>
+			<class name="com.bs.selenium.layout.LayoutTest">
+				<methods>
+					<include name="testCreateNewFolderPageOK" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	
+	
+	
+	
+	
+	
 </suite>
 
  	

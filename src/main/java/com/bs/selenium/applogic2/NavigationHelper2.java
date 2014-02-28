@@ -32,4 +32,10 @@ public class NavigationHelper2 extends DriverBasedHelper implements NavigationHe
     
   }
 
+@Override
+public void gotoUserCabinetPage() {
+	pages.internalPage.ensurePageLoaded().clickUserCabinetPage();
+	
+}
+
 }
