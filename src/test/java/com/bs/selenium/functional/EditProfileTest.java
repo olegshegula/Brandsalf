@@ -64,7 +64,7 @@ public class EditProfileTest extends com.bs.selenium.pages.TestBase {
 	@Test
 	public void testLoadAvatarJpegPositiv() throws Exception {
 		User user = new User().setLogin("oleg").setPassword("123qweasd");
-		Files path = new Files().setPath("c:\\4jpeg.jpeg");
+		Files path = new Files().setPath("c:\\4jpeg.jpg");
 
 		app.getUserHelper().loginAs(user);
 		app.getNavigationHelper().gotoUserProfilePage();
