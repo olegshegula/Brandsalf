@@ -187,6 +187,29 @@ public class UserHelper2 extends DriverBasedHelper implements UserHelper {
 				.ensurePageLoaded()
 				.getAvatarpath().isEmpty();
 	}
+
+	@Override
+	public boolean isPullDownMenuCorrect(String s1, String s2, String s3, String s4, String s5) {
+		
+		pages.internalPage.ensurePageLoaded();
+		
+		
+		List<String> actualLinkList = new ArrayList<String>();
+
+		List<String> expectedList = Arrays.asList(s1,s2,s3,s4,s5);
+
+		List<WebElement> linkList = pages.getWebDriver().findElements(
+				By.xpath(".//*[@id='collapseThree']//a"));
+
+		for (WebElement element : linkList) {
+			actualLinkList.add(element.getText());
+			System.out.println(element.getText());
+		}
+
+		return actualLinkList.containsAll(expectedList);
+	}
+
+
 }
 
 // assertTrue(layoutBugs.size() ==1);

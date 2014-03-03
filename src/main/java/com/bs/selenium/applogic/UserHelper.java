@@ -23,5 +23,7 @@ public interface UserHelper {
 	void createFolderForProposition(Folder foldername);
 	boolean isToggled();	
 	void avatarUpload(Files path);
-	boolean isavatarUpload();
+	boolean isavatarUpload();	
+	boolean isPullDownMenuCorrect(String s1, String s2, String s3, String s4,
+			String s5);
 }

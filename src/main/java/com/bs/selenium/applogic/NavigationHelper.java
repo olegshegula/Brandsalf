@@ -7,5 +7,6 @@ public interface NavigationHelper {
   void gotoUserProfilePage();
   void gotoUserManagementPage();
   void gotoUserCabinetPage();
+  
 
 }

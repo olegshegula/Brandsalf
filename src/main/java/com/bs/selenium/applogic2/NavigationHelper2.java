@@ -15,6 +15,8 @@ public class NavigationHelper2 extends DriverBasedHelper implements NavigationHe
   public void openMainPage() {
     driver.get(baseUrl);
   }
+  
+  
 
   @Override
   public void openRelativeUrl(String url) {
