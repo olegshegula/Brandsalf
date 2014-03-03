@@ -156,6 +156,49 @@
 		</classes>
 	</test>
 	
+	<test verbose="2" name="testPullDownContent">
+		<classes>
+			<class name="com.bs.selenium.functional.PullDownMenuTest">
+				<methods>
+					<include name="testPullDownContent" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test verbose="2" name="testPullDownFileCateogory">
+		<classes>
+			<class name="com.bs.selenium.functional.PullDownMenuTest">
+				<methods>
+					<include name="testPullDownFileCateogory" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	<test verbose="2" name="testLoginPageOk">
 		<classes>
