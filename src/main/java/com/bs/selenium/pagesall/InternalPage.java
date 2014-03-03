@@ -59,8 +59,16 @@ public class InternalPage extends AnyPage {
 	@FindBy(xpath = "//a[@href='#collapseThree']")
 	private WebElement contentlink;
 
+	@FindBy(xpath = "//a[@href='#collapseTwo']")
+	private WebElement categorylink;
+
 	public void clickContentLink() {
 		contentlink.click();
+
+	}
+
+	public void clickCategorytLink() {
+		categorylink.click();
 
 	}
 

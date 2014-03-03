@@ -12,6 +12,12 @@ public class ClickLinkHelper2 extends DriverBasedHelper implements ClickLinkHelp
 
 	@Override
 	public void clickOnFileCategory() {
+		pages.internalPage.clickCategorytLink();
+		
+	}
+
+	@Override
+	public void clickOnContent() {
 		pages.internalPage.clickContentLink();
 		
 	}

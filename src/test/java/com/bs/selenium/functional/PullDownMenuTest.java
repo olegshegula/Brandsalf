@@ -21,7 +21,7 @@ public class PullDownMenuTest extends TestBase {
 		User user = new User().setLogin("oleg").setPassword("123qweasd");
 		app.getUserHelper().loginAs(user);
 
-		Assert.assertTrue(app.getUserHelper().isPullDownMenuCorrect(
+		Assert.assertTrue(app.getUserHelper().isPullDownMenuContentCorrect(
 				"Мої пропозиції", "Мої контракти", "Мої файли", "Проекти",
 				"Шаблони"));
 
@@ -33,7 +33,7 @@ public class PullDownMenuTest extends TestBase {
 		app.getUserHelper().loginAs(user);
 
 		app.getClickLinkHelper().clickOnFileCategory();
-		Assert.assertTrue(app.getUserHelper().isPullDownMenuCorrect(
+		Assert.assertTrue(app.getUserHelper().isPullDownMenuCategoryFileCorrect(
 				"Бізнес пропозиції", "Контракти", "Проекти", "Пропозиції",
 				"Шаблони"));
 

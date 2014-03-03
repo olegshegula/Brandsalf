@@ -6,9 +6,8 @@
       <class name="com.bs.selenium.functional.PullDownMenuTest">
         <methods>
           <include name="init"/>
-          <include name="stop"/>
+          <include name="testPullDownContent"/>
           <include name="mayBeLogout"/>
-          <include name="testPullDownFileCateogory"/>
         </methods>
       </class> <!-- com.bs.selenium.functional.PullDownMenuTest -->
     </classes>

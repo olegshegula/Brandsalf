@@ -24,6 +24,9 @@ public interface UserHelper {
 	boolean isToggled();	
 	void avatarUpload(Files path);
 	boolean isavatarUpload();	
-	boolean isPullDownMenuCorrect(String s1, String s2, String s3, String s4,
+	boolean isPullDownMenuContentCorrect(String s1, String s2, String s3, String s4,
 			String s5);
+	boolean isPullDownMenuCategoryFileCorrect(String s1, String s2, String s3, String s4,
+			String s5);
+	
 }

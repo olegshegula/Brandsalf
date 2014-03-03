@@ -10,6 +10,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
 import com.bs.selenium.applogic.UserHelper;
+import com.bs.selenium.model.Constants;
 import com.bs.selenium.model.Files;
 import com.bs.selenium.model.Folder;
 import com.bs.selenium.model.User;
@@ -108,17 +109,15 @@ public class UserHelper2 extends DriverBasedHelper implements UserHelper {
 
 	@Override
 	public void createFolderForProject(Folder foldername) {
-		pages.internalPage.ensurePageLoaded()
-				.clickProjectLink()
-				.ensurePageLoaded()
-				.setfoldernameField(foldername.getName())
+		pages.internalPage.ensurePageLoaded().clickProjectLink()
+				.ensurePageLoaded().setfoldernameField(foldername.getName())
 				.clickAddButton();
 
 	}
 
 	@Override
 	public boolean isFolderCreated(Folder foldername) {
-		
+
 		List<String> actualLinkList = new ArrayList<String>();
 
 		List<String> expectedList = Arrays.asList(foldername.getName());
@@ -137,69 +136,58 @@ public class UserHelper2 extends DriverBasedHelper implements UserHelper {
 
 	@Override
 	public void createFolderForTemplate(Folder foldername) {
-		pages.internalPage.ensurePageLoaded()
-		.clickTemplatetLink()
-		.ensurePageLoaded()
-		.setfoldernameField(foldername.getName())
-		.clickAddButton();
+		pages.internalPage.ensurePageLoaded().clickTemplatetLink()
+				.ensurePageLoaded().setfoldernameField(foldername.getName())
+				.clickAddButton();
 	}
 
 	@Override
 	public void createFolderForOffers(Folder foldername) {
-		pages.internalPage.ensurePageLoaded()
-		.clickOffersLink()
-		.ensurePageLoaded()
-		.setfoldernameField(foldername.getName())
-		.clickAddButton();
+		pages.internalPage.ensurePageLoaded().clickOffersLink()
+				.ensurePageLoaded().setfoldernameField(foldername.getName())
+				.clickAddButton();
 	}
 
 	@Override
-	public boolean isToggled() {		
-		return pages.internalPage.ensurePageLoaded()
-				.clickToggleButton()
+	public boolean isToggled() {
+		return pages.internalPage.ensurePageLoaded().clickToggleButton()
 				.isElementDisplayed();
 	}
 
 	@Override
 	public void avatarUpload(Files path) {
-		pages.userProfilePage.ensurePageLoaded()
-		.uploadFile(path.getPath())
-		.clickSubmitButton();
-		
-	}
-	
+		pages.userProfilePage.ensurePageLoaded().uploadFile(path.getPath())
+				.clickSubmitButton();
 
+	}
 
 	@Override
 	public void createFolderForProposition(Folder foldername) {
-		pages.internalPage.ensurePageLoaded()
-		.clickBussinessPropLink()
-		.ensurePageLoaded()
-		.setfoldernameField(foldername.getName())
-		.clickAddButton();
-		
+		pages.internalPage.ensurePageLoaded().clickBussinessPropLink()
+				.ensurePageLoaded().setfoldernameField(foldername.getName())
+				.clickAddButton();
+
 	}
 
 	@Override
 	public boolean isavatarUpload() {
-		
-		return pages.usercabinetPage
-				.ensurePageLoaded()
-				.getAvatarpath().isEmpty();
+
+		return pages.usercabinetPage.ensurePageLoaded().getAvatarpath()
+				.isEmpty();
 	}
 
 	@Override
-	public boolean isPullDownMenuCorrect(String s1, String s2, String s3, String s4, String s5) {
-		
+	public boolean isPullDownMenuContentCorrect(String s1, String s2,
+			String s3, String s4, String s5) {
+
 		pages.internalPage.ensurePageLoaded();
-		
-		
+
 		List<String> actualLinkList = new ArrayList<String>();
 
-		List<String> expectedList = Arrays.asList(s1,s2,s3,s4,s5);
+		List<String> expectedList = Arrays.asList(s1, s2, s3, s4, s5);
 
 		List<WebElement> linkList = pages.getWebDriver().findElements(
-				By.xpath(".//*[@id='collapseThree']//a"));
+				By.xpath(Constants.ContentByXpath));
 
 		for (WebElement element : linkList) {
 			actualLinkList.add(element.getText());
@@ -209,6 +197,25 @@ public class UserHelper2 extends DriverBasedHelper implements UserHelper {
 		return actualLinkList.containsAll(expectedList);
 	}
 
+	@Override
+	public boolean isPullDownMenuCategoryFileCorrect(String s1, String s2,
+			String s3, String s4, String s5) {
+		pages.internalPage.ensurePageLoaded();
+
+		List<String> actualLinkList = new ArrayList<String>();
+
+		List<String> expectedList = Arrays.asList(s1, s2, s3, s4, s5);
+
+		List<WebElement> linkList = pages.getWebDriver().findElements(
+				By.xpath(Constants.CategoryFileByXpath));
+
+		for (WebElement element : linkList) {
+			actualLinkList.add(element.getText());
+			System.out.println(element.getText());
+		}
+
+		return actualLinkList.containsAll(expectedList);
+	}
 
 }
 
