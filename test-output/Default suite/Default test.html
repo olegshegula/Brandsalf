@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Mar 03 20:09:46 EET 2014</td>
+<td>Started on:</td><td>Tue Mar 04 16:22:12 EET 2014</td>
 </tr>
-<tr><td>Total time:</td><td>12 seconds (12796 ms)</td>
+<tr><td>Total time:</td><td>21 seconds (21368 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,18 +67,139 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.bs.selenium.functional.PullDownMenuTest.testPullDownFileCateogory()'><b>testPullDownFileCateogory</b><br>Test class: com.bs.selenium.functional.PullDownMenuTest</td>
-<td></td>
-<td>1</td>
-<td>com.bs.selenium.functional.PullDownMenuTest@2a205c98</td></tr>
+<td title='com.bs.selenium.functional.SearchTest.testSearchForMyFilesPageOK()'><b>testSearchForMyFilesPageOK</b><br>Test class: com.bs.selenium.functional.SearchTest</td>
+<td><div><pre>org.openqa.selenium.InvalidSelectorException: The given selector //*[@id=&apos;myFiles&apos;]//td[2]/a) is either invalid or does not result in a WebElement. The following error occurred:
+InvalidSelectorError: Unable to locate an element with the xpath expression //*[@id=&apos;myFiles&apos;]//td[2]/a) because of the following error:
+[Exception... &quot;The expression is not a legal expression.&quot;  code: &quot;12&quot; nsresult: &quot;0x805b0033 (SyntaxError)&quot;  location: &quot;&lt;unknown&gt;&quot;]
+Command duration or timeout: 33 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: &apos;2.37.0&apos;, revision: &apos;a7c61cbd68657e133ae96672cf995890bad2ee42&apos;, time: &apos;2013-10-18 09:51:02&apos;
+System info: host: &apos;03-001-0009923&apos;, ip: &apos;169.254.43.99&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_17&apos;
+Session ID: c0f4ebf2-cca8-4482-bc48-0f32ab124df3
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=27.0.1}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:332)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:408)
+	at org.openqa.selenium.By$ByXPath.findElements(By.java:358)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:295)
+	at com.bs.selenium.pagesall.MyFilesSearchResultPage.getsearchResultTable(MyFilesSearchResultPage.java:26)
+	at com.bs.selenium.applogic2.UserHelper2.isSearchFound(UserHelper2.java:232)
+	at com.bs.selenium.functional.SearchTest.testSearchForMyFilesPageOK(SearchTest.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: The given selector //*[@id=&apos;myFiles&apos;]//td[2]/a) is either invalid or does not result in a WebElement. The following error occurred:
+InvalidSelectorError: Unable to locate an element with the xpath expression //*[@id=&apos;myFiles&apos;]//td[2]/a) because of the following error:
+[Exception... &quot;The expression is not a legal expression.&quot;  code: &quot;12&quot; nsresult: &quot;0x805b0033 (SyntaxError)&quot;  location: &quot;&lt;unknown&gt;&quot;]
+Build info: version: &apos;2.37.0&apos;, revision: &apos;a7c61cbd68657e133ae96672cf995890bad2ee42&apos;, time: &apos;2013-10-18 09:51:02&apos;
+System info: host: &apos;03-001-0009923&apos;, ip: &apos;169.254.43.99&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_17&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.annotateInvalidSelectorError_(file:///C:/Users/SHCEGU~1/AppData/Local/Temp/anonymous8261975184959601699webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8865)
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementsInternal_(file:///C:/Users/SHCEGU~1/AppData/Local/Temp/anonymous8261975184959601699webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8923)
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElements(file:///C:/Users/SHCEGU~1/AppData/Local/Temp/anonymous8261975184959601699webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8927)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/SHCEGU~1/AppData/Local/Temp/anonymous8261975184959601699webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10844)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///C:/Users/SHCEGU~1/AppData/Local/Temp/anonymous8261975184959601699webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10849)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///C:/Users/SHCEGU~1/AppData/Local/Temp/anonymous8261975184959601699webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10791)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1747618774", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1747618774'><pre>org.openqa.selenium.InvalidSelectorException: The given selector //*[@id=&apos;myFiles&apos;]//td[2]/a) is either invalid or does not result in a WebElement. The following error occurred:
+InvalidSelectorError: Unable to locate an element with the xpath expression //*[@id=&apos;myFiles&apos;]//td[2]/a) because of the following error:
+[Exception... &quot;The expression is not a legal expression.&quot;  code: &quot;12&quot; nsresult: &quot;0x805b0033 (SyntaxError)&quot;  location: &quot;&lt;unknown&gt;&quot;]
+Command duration or timeout: 33 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: &apos;2.37.0&apos;, revision: &apos;a7c61cbd68657e133ae96672cf995890bad2ee42&apos;, time: &apos;2013-10-18 09:51:02&apos;
+System info: host: &apos;03-001-0009923&apos;, ip: &apos;169.254.43.99&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_17&apos;
+Session ID: c0f4ebf2-cca8-4482-bc48-0f32ab124df3
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=27.0.1}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:332)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:408)
+	at org.openqa.selenium.By$ByXPath.findElements(By.java:358)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:295)
+	at com.bs.selenium.pagesall.MyFilesSearchResultPage.getsearchResultTable(MyFilesSearchResultPage.java:26)
+	at com.bs.selenium.applogic2.UserHelper2.isSearchFound(UserHelper2.java:232)
+	at com.bs.selenium.functional.SearchTest.testSearchForMyFilesPageOK(SearchTest.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: The given selector //*[@id=&apos;myFiles&apos;]//td[2]/a) is either invalid or does not result in a WebElement. The following error occurred:
+InvalidSelectorError: Unable to locate an element with the xpath expression //*[@id=&apos;myFiles&apos;]//td[2]/a) because of the following error:
+[Exception... &quot;The expression is not a legal expression.&quot;  code: &quot;12&quot; nsresult: &quot;0x805b0033 (SyntaxError)&quot;  location: &quot;&lt;unknown&gt;&quot;]
+Build info: version: &apos;2.37.0&apos;, revision: &apos;a7c61cbd68657e133ae96672cf995890bad2ee42&apos;, time: &apos;2013-10-18 09:51:02&apos;
+System info: host: &apos;03-001-0009923&apos;, ip: &apos;169.254.43.99&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_17&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.annotateInvalidSelectorError_(file:///C:/Users/SHCEGU~1/AppData/Local/Temp/anonymous8261975184959601699webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8865)
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementsInternal_(file:///C:/Users/SHCEGU~1/AppData/Local/Temp/anonymous8261975184959601699webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8923)
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElements(file:///C:/Users/SHCEGU~1/AppData/Local/Temp/anonymous8261975184959601699webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8927)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/SHCEGU~1/AppData/Local/Temp/anonymous8261975184959601699webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10844)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///C:/Users/SHCEGU~1/AppData/Local/Temp/anonymous8261975184959601699webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10849)
+	at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///C:/Users/SHCEGU~1/AppData/Local/Temp/anonymous8261975184959601699webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10791)
+</pre></div></td>
+<td>7</td>
+<td>com.bs.selenium.functional.SearchTest@7388665b</td></tr>
 </table><p>
 </body>
 </html>

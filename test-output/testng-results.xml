@@ -1,29 +1,106 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="12796" started-at="2014-03-03T18:09:46Z" finished-at="2014-03-03T18:09:59Z">
+  <suite name="Default suite" duration-ms="21368" started-at="2014-03-04T14:22:12Z" finished-at="2014-03-04T14:22:33Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="12796" started-at="2014-03-03T18:09:46Z" finished-at="2014-03-03T18:09:59Z">
-      <class name="com.bs.selenium.functional.PullDownMenuTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.bs.selenium.functional.PullDownMenuTest@2a205c98]" name="init" is-config="true" duration-ms="10776" started-at="2014-03-03T20:09:46Z" finished-at="2014-03-03T20:09:57Z">
+    <test name="Default test" duration-ms="21368" started-at="2014-03-04T14:22:12Z" finished-at="2014-03-04T14:22:33Z">
+      <class name="com.bs.selenium.functional.SearchTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.bs.selenium.functional.SearchTest@7388665b]" name="init" is-config="true" duration-ms="13654" started-at="2014-03-04T16:22:12Z" finished-at="2014-03-04T16:22:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="mayBeLogout()[pri:0, instance:com.bs.selenium.functional.PullDownMenuTest@2a205c98]" name="mayBeLogout" is-config="true" duration-ms="66" started-at="2014-03-03T20:09:57Z" finished-at="2014-03-03T20:09:57Z">
+        <test-method status="PASS" signature="mayBeLogout()[pri:0, instance:com.bs.selenium.functional.SearchTest@7388665b]" name="mayBeLogout" is-config="true" duration-ms="115" started-at="2014-03-04T16:22:25Z" finished-at="2014-03-04T16:22:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- mayBeLogout -->
-        <test-method status="PASS" signature="testPullDownFileCateogory()[pri:0, instance:com.bs.selenium.functional.PullDownMenuTest@2a205c98]" name="testPullDownFileCateogory" duration-ms="1942" started-at="2014-03-03T20:09:57Z" finished-at="2014-03-03T20:09:59Z">
+        <test-method status="FAIL" signature="testSearchForMyFilesPageOK()[pri:0, instance:com.bs.selenium.functional.SearchTest@7388665b]" name="testSearchForMyFilesPageOK" duration-ms="7553" started-at="2014-03-04T16:22:26Z" finished-at="2014-03-04T16:22:33Z">
+          <exception class="org.openqa.selenium.InvalidSelectorException">
+            <message>
+              <![CDATA[The given selector //*[@id='myFiles']//td[2]/a) is either invalid or does not result in a WebElement. The following error occurred:
+InvalidSelectorError: Unable to locate an element with the xpath expression //*[@id='myFiles']//td[2]/a) because of the following error:
+[Exception... "The expression is not a legal expression."  code: "12" nsresult: "0x805b0033 (SyntaxError)"  location: "<unknown>"]
+Command duration or timeout: 33 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '2.37.0', revision: 'a7c61cbd68657e133ae96672cf995890bad2ee42', time: '2013-10-18 09:51:02'
+System info: host: '03-001-0009923', ip: '169.254.43.99', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_17'
+Session ID: c0f4ebf2-cca8-4482-bc48-0f32ab124df3
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=27.0.1}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.InvalidSelectorException: The given selector //*[@id='myFiles']//td[2]/a) is either invalid or does not result in a WebElement. The following error occurred:
+InvalidSelectorError: Unable to locate an element with the xpath expression //*[@id='myFiles']//td[2]/a) because of the following error:
+[Exception... "The expression is not a legal expression."  code: "12" nsresult: "0x805b0033 (SyntaxError)"  location: "<unknown>"]
+Command duration or timeout: 33 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/invalid_selector_exception.html
+Build info: version: '2.37.0', revision: 'a7c61cbd68657e133ae96672cf995890bad2ee42', time: '2013-10-18 09:51:02'
+System info: host: '03-001-0009923', ip: '169.254.43.99', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_17'
+Session ID: c0f4ebf2-cca8-4482-bc48-0f32ab124df3
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, databaseEnabled=true, cssSelectorsEnabled=true, javascriptEnabled=true, acceptSslCerts=true, handlesAlerts=true, browserName=firefox, browserConnectionEnabled=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=27.0.1}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:332)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:408)
+	at org.openqa.selenium.By$ByXPath.findElements(By.java:358)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:295)
+	at com.bs.selenium.pagesall.MyFilesSearchResultPage.getsearchResultTable(MyFilesSearchResultPage.java:26)
+	at com.bs.selenium.applogic2.UserHelper2.isSearchFound(UserHelper2.java:232)
+	at com.bs.selenium.functional.SearchTest.testSearchForMyFilesPageOK(SearchTest.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: The given selector //*[@id='myFiles']//td[2]/a) is either invalid or does not result in a WebElement. The following error occurred:
+InvalidSelectorError: Unable to locate an element with the xpath expression //*[@id='myFiles']//td[2]/a) because of the following error:
+[Exception... "The expression is not a legal expression."  code: "12" nsresult: "0x805b0033 (SyntaxError)"  location: "<unknown>"]
+Build info: version: '2.37.0', revision: 'a7c61cbd68657e133ae96672cf995890bad2ee42', time: '2013-10-18 09:51:02'
+System info: host: '03-001-0009923', ip: '169.254.43.99', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_17'
+Driver info: driver.version: unknown
+	at <anonymous class>.FirefoxDriver.annotateInvalidSelectorError_(file:///C:/Users/SHCEGU~1/AppData/Local/Temp/anonymous8261975184959601699webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8865)
+	at <anonymous class>.FirefoxDriver.prototype.findElementsInternal_(file:///C:/Users/SHCEGU~1/AppData/Local/Temp/anonymous8261975184959601699webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8923)
+	at <anonymous class>.FirefoxDriver.prototype.findElements(file:///C:/Users/SHCEGU~1/AppData/Local/Temp/anonymous8261975184959601699webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:8927)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/SHCEGU~1/AppData/Local/Temp/anonymous8261975184959601699webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10844)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/SHCEGU~1/AppData/Local/Temp/anonymous8261975184959601699webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10849)
+	at <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/SHCEGU~1/AppData/Local/Temp/anonymous8261975184959601699webdriver-profile/extensions/fxdriver@googlecode.com/components/command_processor.js:10791)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testPullDownFileCateogory -->
-        <test-method status="PASS" signature="stop()[pri:0, instance:com.bs.selenium.functional.PullDownMenuTest@2a205c98]" name="stop" is-config="true" duration-ms="139" started-at="2014-03-03T20:09:59Z" finished-at="2014-03-03T20:09:59Z">
+        </test-method> <!-- testSearchForMyFilesPageOK -->
+        <test-method status="PASS" signature="stop()[pri:0, instance:com.bs.selenium.functional.SearchTest@7388665b]" name="stop" is-config="true" duration-ms="504" started-at="2014-03-04T16:22:33Z" finished-at="2014-03-04T16:22:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stop -->
-      </class> <!-- com.bs.selenium.functional.PullDownMenuTest -->
+      </class> <!-- com.bs.selenium.functional.SearchTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

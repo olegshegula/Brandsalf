@@ -62,8 +62,31 @@ public class InternalPage extends AnyPage {
 	@FindBy(xpath = "//a[@href='#collapseTwo']")
 	private WebElement categorylink;
 
+	@FindBy(xpath = "//*[@id='search']/a")
+	private WebElement searchlink;
+
+	@FindBy(xpath = "//*[@id='formSearch']//input[@type='text']")
+	private WebElement searchinput;
+
+	@FindBy(xpath = ".//*[@id='formSearch']//button[@type='submit']")
+	private WebElement searchOKBtn;
+	
+	@FindBy(xpath = "//a[text()='Мої файли']")
+	private WebElement clickMyFilePageTab;
+	
+	public void clickMyFilePageTab(){
+		clickMyFilePageTab.click();
+		
+	}
+	
 	public void clickContentLink() {
 		contentlink.click();
+
+	}
+
+	public MyFilesSearchResultPage clickSearchOKBtn() {
+		searchOKBtn.click();
+		return pages.myfilessearchPage;
 
 	}
 
@@ -124,6 +147,18 @@ public class InternalPage extends AnyPage {
 	public UserCabinetPage clickUserCabinetPage() {
 		usercabinetlink.click();
 		return pages.usercabinetPage;
+	}
+
+	public InternalPage clickSearchLink() {
+		searchlink.click();
+		return pages.internalPage;
+
+	}
+
+	public InternalPage setSearchField(String text) {
+
+		searchinput.sendKeys(text);
+		return this;
 	}
 
 }

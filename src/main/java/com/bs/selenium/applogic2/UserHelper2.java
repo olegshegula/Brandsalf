@@ -217,6 +217,23 @@ public class UserHelper2 extends DriverBasedHelper implements UserHelper {
 		return actualLinkList.containsAll(expectedList);
 	}
 
+	@Override
+	public void search(Files filename) {
+		pages.internalPage.ensurePageLoaded().clickSearchLink()
+				.setSearchField(filename.getName()).clickSearchOKBtn();
+
+		
+
+	}
+
+	@Override
+	public boolean isSearchFound(Files filename) {		
+		return pages.myfilessearchPage.ensurePageLoaded()
+				.getsearchResultTable().contains(filename.getName());
+	}
+
+		
+
 }
 
 // assertTrue(layoutBugs.size() ==1);

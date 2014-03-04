@@ -12,8 +12,8 @@ public class PageManager {
 	public UserProfilePage userProfilePage;
 	public UserManagementPage userManagementPage;
 	public LoadPage loadPage;
-
 	public UserCabinetPage usercabinetPage;
+	public MyFilesSearchResultPage myfilessearchPage;
 
 	public PageManager(WebDriver driver) {
 		this.driver = driver;
@@ -23,6 +23,7 @@ public class PageManager {
 		userManagementPage = initElements(new UserManagementPage(this));
 		loadPage = initElements(new LoadPage(this));
 		usercabinetPage = initElements(new UserCabinetPage(this));
+		myfilessearchPage = initElements(new MyFilesSearchResultPage(this));
 	}
 
 	private <T extends Page> T initElements(T page) {

@@ -10,7 +10,7 @@ public class LoadPage extends AnyPage{
 
 	public LoadPage(PageManager pages) {
 		super(pages);
-		// TODO Auto-generated constructor stub
+		
 	}
 
 	 @FindBy(id = "cat_add")

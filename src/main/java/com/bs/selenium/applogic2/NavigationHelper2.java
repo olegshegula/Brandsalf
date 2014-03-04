@@ -40,4 +40,10 @@ public void gotoUserCabinetPage() {
 	
 }
 
+@Override
+public void gotoMyFilesSearchResultPage() {
+	pages.internalPage.ensurePageLoaded().clickMyFilePageTab();
+	
+}
+
 }
