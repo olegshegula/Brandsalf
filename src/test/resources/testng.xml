@@ -146,6 +146,16 @@
 		</classes>
 	</test>
 	
+	<test verbose="2" name="testAddNewFolderforProjectNegative">
+		<classes>
+			<class name="com.bs.selenium.functional.AddNewFolderTest">
+				<methods>
+					<include name="testAddNewFolderforProjectNegative" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
 	<test verbose="2" name="testToggleButton">
 		<classes>
 			<class name="com.bs.selenium.functional.ClickToggleButtonTest">

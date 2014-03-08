@@ -46,7 +46,7 @@ public class AddNewFolderTest extends TestBase {
 		// Check existing of folder
 		app.getNavigationHelper().openMainPage();
 		app.getNavigationHelper().openRelativeUrl("user/create/1");
-		Assert.assertTrue(app.getUserHelper().isFolderCreated(foldername));
+		Assert.assertFalse(app.getUserHelper().isFolderCreated(foldername));
 
 	}
 
