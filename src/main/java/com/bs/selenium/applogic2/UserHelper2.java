@@ -222,17 +222,13 @@ public class UserHelper2 extends DriverBasedHelper implements UserHelper {
 		pages.internalPage.ensurePageLoaded().clickSearchLink()
 				.setSearchField(filename.getName()).clickSearchOKBtn();
 
-		
-
 	}
 
 	@Override
-	public boolean isSearchFound(Files filename) {		
+	public boolean isSearchFound(Files filename) {
 		return pages.myfilessearchPage.ensurePageLoaded()
 				.getsearchResultTable().contains(filename.getName());
 	}
-
-		
 
 }
 

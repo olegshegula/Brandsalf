@@ -21,7 +21,7 @@ public class EditProfileTest extends com.bs.selenium.pages.TestBase {
 		// Prepare the new data for profile
 		User edituser = new User()
 				.setUservideo("http://www.youtube.com/watch?v=tswOmw6vqhI")
-				.setUsername("Юыху2").setLogin("oleg").setPhone("0675627660")
+				.setUsername("Юыху").setLogin("oleg").setPhone("0675627660")
 				.setEmail("oleg.shegula@gmail.com").setPassword("123qweasd")
 				.setPassword2("123qweasd");
 
@@ -30,6 +30,7 @@ public class EditProfileTest extends com.bs.selenium.pages.TestBase {
 		app.getUserHelper().loginAs(user);
 		app.getNavigationHelper().gotoUserProfilePage();
 		app.getUserHelper().edituserprofile(edituser);
+		app.getNavigationHelper().openMainPage();
 		app.getUserHelper().logout();
 
 		// Check
@@ -47,7 +48,7 @@ public class EditProfileTest extends com.bs.selenium.pages.TestBase {
 		app.getUserHelper().loginAs(user);
 		app.getNavigationHelper().gotoUserProfilePage();
 		app.getUserHelper().avatarUpload(path);
-		//Assert.assertFalse(app.getUserHelper().isavatarUpload());
+		// Assert.assertFalse(app.getUserHelper().isavatarUpload());
 	}
 
 	@Test
@@ -58,7 +59,7 @@ public class EditProfileTest extends com.bs.selenium.pages.TestBase {
 		app.getUserHelper().loginAs(user);
 		app.getNavigationHelper().gotoUserProfilePage();
 		app.getUserHelper().avatarUpload(path);
-		//Assert.assertFalse(app.getUserHelper().isavatarUpload());
+		// Assert.assertFalse(app.getUserHelper().isavatarUpload());
 	}
 
 	@Test
@@ -69,7 +70,7 @@ public class EditProfileTest extends com.bs.selenium.pages.TestBase {
 		app.getUserHelper().loginAs(user);
 		app.getNavigationHelper().gotoUserProfilePage();
 		app.getUserHelper().avatarUpload(path);
-		//Assert.assertFalse(app.getUserHelper().isavatarUpload());
+		// Assert.assertFalse(app.getUserHelper().isavatarUpload());
 	}
 
 	@Test
@@ -80,13 +81,13 @@ public class EditProfileTest extends com.bs.selenium.pages.TestBase {
 		app.getUserHelper().loginAs(user);
 		app.getNavigationHelper().gotoUserProfilePage();
 		app.getUserHelper().avatarUpload(path);
-		//Assert.assertFalse(app.getUserHelper().isavatarUpload());
+		// Assert.assertFalse(app.getUserHelper().isavatarUpload());
 
 	}
 
 	@Test
 	public void testLoadAvatarNegative() throws Exception {
-		
+
 		User user = new User().setLogin("oleg").setPassword("123qweasd");
 		Files path = new Files().setPath("c:\\test.docx");
 
