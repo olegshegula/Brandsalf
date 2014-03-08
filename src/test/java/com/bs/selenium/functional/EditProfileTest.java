@@ -39,6 +39,31 @@ public class EditProfileTest extends com.bs.selenium.pages.TestBase {
 		Assert.assertTrue(app.getUserHelper().isLoggedInAs(correctuser));
 
 	}
+	
+	@Test
+	public void testEnterAllFieldsCorrectWithoutPasswords() throws Exception {
+
+		// Prepare the new data for profile
+		User edituser = new User()
+				.setUservideo("http://www.youtube.com/watch?v=tswOmw6vqhI")
+				.setUsername("Юыху").setLogin("oleg").setPhone("0675627660")
+				.setEmail("oleg.shegula@gmail.com");
+
+		// Edit user profile
+		User user = new User().setLogin("oleg").setPassword("123qweasd");
+		app.getUserHelper().loginAs(user);
+		app.getNavigationHelper().gotoUserProfilePage();
+		app.getUserHelper().edituserprofile(edituser);
+		app.getNavigationHelper().openMainPage();
+		app.getUserHelper().logout();
+
+		// Check
+		User correctuser = new User().setLogin("oleg").setPassword("123qweasd");
+		app.getUserHelper().loginAs(correctuser);
+		Assert.assertTrue(app.getUserHelper().isLoggedInAs(correctuser));
+
+	}
+
 
 	@Test
 	public void testLoadAvatarPngPositiv() throws Exception {

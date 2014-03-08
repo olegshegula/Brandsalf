@@ -8,6 +8,9 @@ public interface NavigationHelper {
   void gotoUserManagementPage();
   void gotoUserCabinetPage();
   void gotoMyFilesSearchResultPage();
+  void gotoFilesSearchResultPage();
+  void gotoActsSearchResultPage();
+  void gotoContractsSearchResultPage();
   
 
 }

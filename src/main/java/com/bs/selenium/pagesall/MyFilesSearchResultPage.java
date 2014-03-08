@@ -17,14 +17,14 @@ public class MyFilesSearchResultPage extends AnyPage {
 	public MyFilesSearchResultPage ensurePageLoaded() {
 		super.ensurePageLoaded();
 		wait.until(presenceOfElementLocated(By
-				.xpath("//a[text()='Завантажити файл']")));
+				.xpath("//table")));
 		return this;
 	}
 
 	public List<String> getsearchResultTable() {
 		List<String> actualLinkList = new ArrayList<String>();
 		List<WebElement> linkList = pages.getWebDriver().findElements(
-				By.xpath("//*[@id='myFiles']//td[2]/a)"));
+				By.xpath("//td[2]/a"));
 
 		for (WebElement element : linkList) {
 			actualLinkList.add(element.getText());

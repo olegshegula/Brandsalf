@@ -70,15 +70,39 @@ public class InternalPage extends AnyPage {
 
 	@FindBy(xpath = ".//*[@id='formSearch']//button[@type='submit']")
 	private WebElement searchOKBtn;
-	
+
 	@FindBy(xpath = "//a[text()='Мої файли']")
 	private WebElement clickMyFilePageTab;
-	
-	public void clickMyFilePageTab(){
-		clickMyFilePageTab.click();
-		
+
+	@FindBy(xpath = "//a[text()='Файли']")
+	private WebElement clickFilePageTab;
+
+	@FindBy(xpath = "//a[text()='Акти']")
+	private WebElement clickActsPageTab;
+
+	@FindBy(xpath = "//a[text()='Контракти']")
+	private WebElement clickContractsPageTab;
+
+	public void clickConractsPageTab() {
+		clickContractsPageTab.click();
+
 	}
-	
+
+	public void clickActsPageTab() {
+		clickActsPageTab.click();
+
+	}
+
+	public void clickMyFilePageTab() {
+		clickMyFilePageTab.click();
+
+	}
+
+	public void clickFilePageTab() {
+		clickFilePageTab.click();
+
+	}
+
 	public void clickContentLink() {
 		contentlink.click();
 

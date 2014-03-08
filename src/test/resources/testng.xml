@@ -55,7 +55,17 @@
 			</class>
 		</classes>
 	</test>
-	
+
+	<test verbose="2" name="testEnterAllFieldsCorrectWithoutPasswords">
+		<classes>
+			<class name="com.bs.selenium.functional.EditProfileTest">
+				<methods>
+					<include name="testEnterAllFieldsCorrectWithoutPasswords" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
 	<test verbose="2" name="testLoadAvatarGifPositive">
 		<classes>
 			<class name="com.bs.selenium.functional.EditProfileTest">
@@ -65,7 +75,7 @@
 			</class>
 		</classes>
 	</test>
-	
+
 	<test verbose="2" name="testLoadAvatarNegative">
 		<classes>
 			<class name="com.bs.selenium.functional.EditProfileTest">
@@ -75,7 +85,7 @@
 			</class>
 		</classes>
 	</test>
-	
+
 	<test verbose="2" name="testLoadAvatarJpegPositiv">
 		<classes>
 			<class name="com.bs.selenium.functional.EditProfileTest">
@@ -85,7 +95,7 @@
 			</class>
 		</classes>
 	</test>
-	
+
 	<test verbose="2" name="testLoadAvatarJpgPositiv">
 		<classes>
 			<class name="com.bs.selenium.functional.EditProfileTest">
@@ -95,7 +105,7 @@
 			</class>
 		</classes>
 	</test>
-	
+
 	<test verbose="2" name="testLoadAvatarPngPositiv">
 		<classes>
 			<class name="com.bs.selenium.functional.EditProfileTest">
@@ -105,7 +115,7 @@
 			</class>
 		</classes>
 	</test>
-	
+
 	<test verbose="2" name="testAddNewFolderforOffersOk">
 		<classes>
 			<class name="com.bs.selenium.functional.AddNewFolderTest">
@@ -115,7 +125,7 @@
 			</class>
 		</classes>
 	</test>
-	
+
 	<test verbose="2" name="testAddNewFolderforProjectOk">
 		<classes>
 			<class name="com.bs.selenium.functional.AddNewFolderTest">
@@ -125,7 +135,7 @@
 			</class>
 		</classes>
 	</test>
-	
+
 	<test verbose="2" name="testAddNewFolderforTemplateOk">
 		<classes>
 			<class name="com.bs.selenium.functional.AddNewFolderTest">
@@ -135,7 +145,7 @@
 			</class>
 		</classes>
 	</test>
-	
+
 	<test verbose="2" name="testAddNewFolderforBusinessPropositionsOk">
 		<classes>
 			<class name="com.bs.selenium.functional.AddNewFolderTest">
@@ -145,7 +155,7 @@
 			</class>
 		</classes>
 	</test>
-	
+
 	<test verbose="2" name="testAddNewFolderforProjectNegative">
 		<classes>
 			<class name="com.bs.selenium.functional.AddNewFolderTest">
@@ -155,7 +165,7 @@
 			</class>
 		</classes>
 	</test>
-	
+
 	<test verbose="2" name="testToggleButton">
 		<classes>
 			<class name="com.bs.selenium.functional.ClickToggleButtonTest">
@@ -165,7 +175,7 @@
 			</class>
 		</classes>
 	</test>
-	
+
 	<test verbose="2" name="testPullDownContent">
 		<classes>
 			<class name="com.bs.selenium.functional.PullDownMenuTest">
@@ -175,7 +185,7 @@
 			</class>
 		</classes>
 	</test>
-	
+
 	<test verbose="2" name="testPullDownFileCateogory">
 		<classes>
 			<class name="com.bs.selenium.functional.PullDownMenuTest">
@@ -185,31 +195,69 @@
 			</class>
 		</classes>
 	</test>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
+	<test verbose="2" name="testSearchForMyFilesPageOK">
+		<classes>
+			<class name="com.bs.selenium.functional.SearchTest">
+				<methods>
+					<include name="testSearchForMyFilesPageOK" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test verbose="2" name="testSearchForFilesPageOK">
+		<classes>
+			<class name="com.bs.selenium.functional.SearchTest">
+				<methods>
+					<include name="testSearchForFilesPageOK" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test verbose="2" name="testSearchForActsPageOK">
+		<classes>
+			<class name="com.bs.selenium.functional.SearchTest">
+				<methods>
+					<include name="testSearchForActsPageOK" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test verbose="2" name="testSearchForContractsPageOK">
+		<classes>
+			<class name="com.bs.selenium.functional.SearchTest">
+				<methods>
+					<include name="testSearchForContractsPageOK" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	<test verbose="2" name="testLoginPageOk">
 		<classes>
 			<class name="com.bs.selenium.layout.LayoutTest">
@@ -237,7 +285,7 @@
 			</class>
 		</classes>
 	</test>
-	
+
 	<test verbose="2" name="testInternalPagePositive">
 		<classes>
 			<class name="com.bs.selenium.layout.LayoutTest">
@@ -247,7 +295,7 @@
 			</class>
 		</classes>
 	</test>
-	
+
 	<test verbose="2" name="testUserProfilePageOK">
 		<classes>
 			<class name="com.bs.selenium.layout.LayoutTest">
@@ -257,7 +305,7 @@
 			</class>
 		</classes>
 	</test>
-	
+
 	<test verbose="2" name="testUserCabinetPageOK">
 		<classes>
 			<class name="com.bs.selenium.layout.LayoutTest">
@@ -267,7 +315,7 @@
 			</class>
 		</classes>
 	</test>
-	
+
 	<test verbose="2" name="testCreateNewFolderPageOK">
 		<classes>
 			<class name="com.bs.selenium.layout.LayoutTest">
@@ -277,13 +325,13 @@
 			</class>
 		</classes>
 	</test>
-	
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
+
 </suite>
 
  	

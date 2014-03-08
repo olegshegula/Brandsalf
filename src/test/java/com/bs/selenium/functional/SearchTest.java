@@ -28,5 +28,42 @@ public class SearchTest extends TestBase {
 		app.getUserHelper().search(filename);
 		Assert.assertTrue(app.getUserHelper().isSearchFound(filename));
 	}
+	
+	@Test
+	public void testSearchForFilesPageOK() {
+
+		Files filename = new Files().setName("test");
+		User user = new User().setLogin("oleg").setPassword("123qweasd");
+		app.getUserHelper().loginAs(user);
+
+		app.getNavigationHelper().gotoFilesSearchResultPage();
+		app.getUserHelper().search(filename);
+		Assert.assertTrue(app.getUserHelper().isSearchFound(filename));
+	}
+
+	
+	@Test
+	public void testSearchForActsPageOK() {
+
+		Files filename = new Files().setName("акт 008 секция 11.pdf");
+		User user = new User().setLogin("oleg").setPassword("123qweasd");
+		app.getUserHelper().loginAs(user);
+
+		app.getNavigationHelper().gotoActsSearchResultPage();
+		app.getUserHelper().search(filename);
+		Assert.assertTrue(app.getUserHelper().isSearchFound(filename));
+	}
+	
+	@Test
+	public void testSearchForContractsPageOK() {
+
+		Files filename = new Files().setName("акт 008 секция 11.pdf");
+		User user = new User().setLogin("oleg").setPassword("123qweasd");
+		app.getUserHelper().loginAs(user);
+
+		app.getNavigationHelper().gotoContractsSearchResultPage();
+		app.getUserHelper().search(filename);
+		Assert.assertTrue(app.getUserHelper().isSearchFound(filename));
+	}
 
 }

@@ -46,4 +46,22 @@ public void gotoMyFilesSearchResultPage() {
 	
 }
 
+@Override
+public void gotoFilesSearchResultPage() {
+	pages.internalPage.ensurePageLoaded().clickFilePageTab();
+	
+}
+
+@Override
+public void gotoActsSearchResultPage() {
+	pages.internalPage.ensurePageLoaded().clickActsPageTab();
+	
+}
+
+@Override
+public void gotoContractsSearchResultPage() {
+	pages.internalPage.ensurePageLoaded().clickConractsPageTab();
+	
+}
+
 }
