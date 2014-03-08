@@ -119,12 +119,12 @@ public class InternalPage extends AnyPage {
 	}
 
 	public LoadPage clickOffersLink() {
-		bpropositionslink.click();
+		offerlink.click();
 		return pages.loadPage;
 	}
 
 	public LoadPage clickBussinessPropLink() {
-		offerlink.click();
+		bpropositionslink.click();
 		return pages.loadPage;
 	}
 

@@ -85,12 +85,12 @@ public class AddNewFolderTest extends TestBase {
 	@Test
 	public void testAddNewFolderforBusinessPropositionsOk() throws Exception {
 		// Prepare data
-		Folder foldername = new Folder().setName("NewForlderAuto");
+		Folder foldername = new Folder().setName("AutoForlderBusiness");
 		User user = new User().setLogin("oleg").setPassword("123qweasd");
 
 		// Add new folder to Project
 		app.getUserHelper().loginAs(user);
-		app.getUserHelper().createFolderForOffers(foldername);
+		app.getUserHelper().createFolderForProposition(foldername);
 		// Check existing of folder
 		app.getNavigationHelper().openMainPage();
 		app.getNavigationHelper().openRelativeUrl("user/create/148417");

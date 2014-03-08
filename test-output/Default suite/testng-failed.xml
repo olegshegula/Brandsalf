@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.bs.selenium.functional.SearchTest">
+      <class name="com.bs.selenium.functional.AddNewFolderTest">
         <methods>
           <include name="init"/>
-          <include name="testSearchForMyFilesPageOK"/>
-          <include name="mayBeLogout"/>
           <include name="stop"/>
+          <include name="testAddNewFolderforBusinessPropositionsOk"/>
+          <include name="mayBeLogout"/>
         </methods>
-      </class> <!-- com.bs.selenium.functional.SearchTest -->
+      </class> <!-- com.bs.selenium.functional.AddNewFolderTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
