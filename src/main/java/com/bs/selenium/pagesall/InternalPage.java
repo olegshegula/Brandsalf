@@ -80,7 +80,7 @@ public class InternalPage extends AnyPage {
 	@FindBy(xpath = "//a[text()='Акти']")
 	private WebElement clickActsPageTab;
 
-	@FindBy(xpath = "//a[text()='Контракти']")
+	@FindBy(xpath = "//*[@id='yw1']//a[text()='Контракти']")
 	private WebElement clickContractsPageTab;
 
 	public void clickConractsPageTab() {

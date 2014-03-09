@@ -57,7 +57,7 @@ public class SearchTest extends TestBase {
 	@Test
 	public void testSearchForContractsPageOK() {
 
-		Files filename = new Files().setName("акт 008 секция 11.pdf");
+		Files filename = new Files().setName("testDOC.docx");
 		User user = new User().setLogin("oleg").setPassword("123qweasd");
 		app.getUserHelper().loginAs(user);
 
