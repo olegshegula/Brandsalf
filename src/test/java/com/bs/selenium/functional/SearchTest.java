@@ -28,7 +28,19 @@ public class SearchTest extends TestBase {
 		app.getUserHelper().search(filename);
 		Assert.assertTrue(app.getUserHelper().isSearchFound(filename));
 	}
-	
+
+	@Test
+	public void testSearchForMyFilesPageBlank() {
+
+		Files filename = new Files().setName("");
+		User user = new User().setLogin("oleg").setPassword("123qweasd");
+		app.getUserHelper().loginAs(user);
+
+		app.getNavigationHelper().gotoMyFilesSearchResultPage();
+		app.getUserHelper().search(filename);
+		Assert.assertTrue(app.getUserHelper().isSearchFound(filename));
+	}
+
 	@Test
 	public void testSearchForFilesPageOK() {
 
@@ -41,7 +53,18 @@ public class SearchTest extends TestBase {
 		Assert.assertTrue(app.getUserHelper().isSearchFound(filename));
 	}
 
-	
+	@Test
+	public void testSearchForFilesPageBlank() {
+
+		Files filename = new Files().setName("");
+		User user = new User().setLogin("oleg").setPassword("123qweasd");
+		app.getUserHelper().loginAs(user);
+
+		app.getNavigationHelper().gotoFilesSearchResultPage();
+		app.getUserHelper().search(filename);
+		Assert.assertTrue(app.getUserHelper().isSearchFound(filename));
+	}
+
 	@Test
 	public void testSearchForActsPageOK() {
 
@@ -53,11 +76,34 @@ public class SearchTest extends TestBase {
 		app.getUserHelper().search(filename);
 		Assert.assertTrue(app.getUserHelper().isSearchFound(filename));
 	}
-	
+
+	@Test
+	public void testSearchForActsPageBlank() {
+
+		Files filename = new Files().setName("");
+		User user = new User().setLogin("oleg").setPassword("123qweasd");
+		app.getUserHelper().loginAs(user);
+
+		app.getNavigationHelper().gotoActsSearchResultPage();
+		app.getUserHelper().search(filename);
+		Assert.assertTrue(app.getUserHelper().isSearchFound(filename));
+	}
+
 	@Test
 	public void testSearchForContractsPageOK() {
 
 		Files filename = new Files().setName("testDOC.docx");
+		User user = new User().setLogin("oleg").setPassword("123qweasd");
+		app.getUserHelper().loginAs(user);
+		app.getNavigationHelper().gotoContractsSearchResultPage();
+		app.getUserHelper().search(filename);
+		Assert.assertTrue(app.getUserHelper().isSearchFound(filename));
+	}
+
+	@Test
+	public void testSearchForContractsPageBlank() {
+
+		Files filename = new Files().setName("");
 		User user = new User().setLogin("oleg").setPassword("123qweasd");
 		app.getUserHelper().loginAs(user);
 

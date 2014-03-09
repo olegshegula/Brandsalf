@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="14806" started-at="2014-03-09T08:36:14Z" finished-at="2014-03-09T08:36:29Z">
+  <suite name="Default suite" duration-ms="9256" started-at="2014-03-09T09:06:02Z" finished-at="2014-03-09T09:06:11Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="14806" started-at="2014-03-09T08:36:14Z" finished-at="2014-03-09T08:36:29Z">
+    <test name="Default test" duration-ms="9256" started-at="2014-03-09T09:06:02Z" finished-at="2014-03-09T09:06:11Z">
       <class name="com.bs.selenium.functional.SearchTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.bs.selenium.functional.SearchTest@36293b29]" name="init" is-config="true" duration-ms="11525" started-at="2014-03-09T10:36:14Z" finished-at="2014-03-09T10:36:26Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.bs.selenium.functional.SearchTest@31f3f16b]" name="init" is-config="true" duration-ms="5597" started-at="2014-03-09T11:06:02Z" finished-at="2014-03-09T11:06:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="mayBeLogout()[pri:0, instance:com.bs.selenium.functional.SearchTest@36293b29]" name="mayBeLogout" is-config="true" duration-ms="113" started-at="2014-03-09T10:36:26Z" finished-at="2014-03-09T10:36:26Z">
+        <test-method status="PASS" signature="mayBeLogout()[pri:0, instance:com.bs.selenium.functional.SearchTest@31f3f16b]" name="mayBeLogout" is-config="true" duration-ms="77" started-at="2014-03-09T11:06:07Z" finished-at="2014-03-09T11:06:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- mayBeLogout -->
-        <test-method status="PASS" signature="testSearchForContractsPageOK()[pri:0, instance:com.bs.selenium.functional.SearchTest@36293b29]" name="testSearchForContractsPageOK" duration-ms="3152" started-at="2014-03-09T10:36:26Z" finished-at="2014-03-09T10:36:29Z">
+        <test-method status="PASS" signature="testSearchForContractsPageBlank()[pri:0, instance:com.bs.selenium.functional.SearchTest@31f3f16b]" name="testSearchForContractsPageBlank" duration-ms="3569" started-at="2014-03-09T11:06:07Z" finished-at="2014-03-09T11:06:11Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testSearchForContractsPageOK -->
-        <test-method status="PASS" signature="stop()[pri:0, instance:com.bs.selenium.functional.SearchTest@36293b29]" name="stop" is-config="true" duration-ms="191" started-at="2014-03-09T10:36:29Z" finished-at="2014-03-09T10:36:29Z">
+        </test-method> <!-- testSearchForContractsPageBlank -->
+        <test-method status="PASS" signature="stop()[pri:0, instance:com.bs.selenium.functional.SearchTest@31f3f16b]" name="stop" is-config="true" duration-ms="150" started-at="2014-03-09T11:06:11Z" finished-at="2014-03-09T11:06:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stop -->

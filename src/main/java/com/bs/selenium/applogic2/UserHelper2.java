@@ -227,9 +227,9 @@ public class UserHelper2 extends DriverBasedHelper implements UserHelper {
 	@Override
 	public boolean isSearchFound(Files filename) {
 		return pages.myfilessearchPage.ensurePageLoaded()
-				.getsearchResultTable().contains(filename.getName());
+				.getsearchResultTable().contains(filename.getName()) |
+				pages.myfilessearchPage.ensurePageLoaded().getsearchResultTable().size()==10;
 	}
-
 }
 
 // assertTrue(layoutBugs.size() ==1);

@@ -235,6 +235,78 @@
 			</class>
 		</classes>
 	</test>
+	<test verbose="2" name="testSearchForMyFilesPageBlank">
+		<classes>
+			<class name="com.bs.selenium.functional.SearchTest">
+				<methods>
+					<include name="testSearchForMyFilesPageBlank" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test verbose="2" name="testSearchForFilesPageBlank">
+		<classes>
+			<class name="com.bs.selenium.functional.SearchTest">
+				<methods>
+					<include name="testSearchForFilesPageBlank" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test verbose="2" name="testSearchForActsPageBlank">
+		<classes>
+			<class name="com.bs.selenium.functional.SearchTest">
+				<methods>
+					<include name="testSearchForActsPageBlank" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test verbose="2" name="testSearchForContractsPageBlank">
+		<classes>
+			<class name="com.bs.selenium.functional.SearchTest">
+				<methods>
+					<include name="testSearchForContractsPageBlank" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

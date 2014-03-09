@@ -6,9 +6,9 @@
       <class name="com.bs.selenium.functional.SearchTest">
         <methods>
           <include name="init"/>
+          <include name="testSearchForMyFilesPageOK"/>
           <include name="mayBeLogout"/>
           <include name="stop"/>
-          <include name="testSearchForContractsPageOK"/>
         </methods>
       </class> <!-- com.bs.selenium.functional.SearchTest -->
     </classes>
