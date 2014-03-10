@@ -106,6 +106,24 @@
 				<activeByDefault>true</activeByDefault>
 			</activation>
 		</profile>
+		
+		<profile>
+			<id>firefox_linux</id>
+			<properties>
+				<env>local</env>
+				<user.username></user.username>
+				<user.password></user.password>
+				<grid2.hub>http://192.168.1.255:4444/wd/hub</grid2.hub>
+				<site.url>http://185.25.118.92/</site.url>
+				<browser.name>firefox</browser.name>
+				<browser.version></browser.version>
+				<browser.platform>linux</browser.platform>
+			</properties>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+		</profile>
+		
 		<profile>
 
 			<id>chrome</id>
@@ -144,6 +162,20 @@
 				<browser.name>ie</browser.name>
 				<browser.version></browser.version>
 				<browser.platform></browser.platform>
+			</properties>
+		</profile>
+		
+		<profile>
+			<id>ie8_xp</id>
+			<properties>
+				<env>test</env>
+				<user.username></user.username>
+				<user.password></user.password>
+				<grid2.hub>http://192.168.1.42:4444/wd/hub</grid2.hub>
+				<site.url>http://185.25.118.92/</site.url>
+				<browser.name>ie</browser.name>
+				<browser.version></browser.version>
+				<browser.platform>xp</browser.platform>
 			</properties>
 		</profile>
 		<profile>
