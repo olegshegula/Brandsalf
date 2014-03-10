@@ -192,7 +192,7 @@
 			</properties>
 		</profile>
 		<profile>
-			<id>firefox_linux</id>
+			<id>chrome_linux</id>
 			<properties>
 				<env>prod</env>
 				<user.username></user.username>
