@@ -53,4 +53,6 @@ public interface UserHelper {
 
 	boolean isSearchFound(Files filename);
 
+	User getLoggedUserInfo();
+	User getUserCabinetInfo();
 }

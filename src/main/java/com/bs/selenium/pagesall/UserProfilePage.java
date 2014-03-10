@@ -48,6 +48,16 @@ public class UserProfilePage extends InternalPage {
 	public String getUsername() {
 		return userloginField.getAttribute("value");
 	}
+	
+	public String getFIO() {
+		return usernameField.getAttribute("value");
+	}
+	
+	public String getPhone() {
+		return userphoneField.getAttribute("value");
+	}
+
+
 
 	public String getEmail() {
 		return emailField.getAttribute("value");

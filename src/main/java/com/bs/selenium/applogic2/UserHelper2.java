@@ -14,6 +14,7 @@ import com.bs.selenium.model.Constants;
 import com.bs.selenium.model.Files;
 import com.bs.selenium.model.Folder;
 import com.bs.selenium.model.User;
+import com.bs.selenium.pagesall.UserCabinetPage;
 import com.bs.selenium.pagesall.UserProfilePage;
 import com.googlecode.fightinglayoutbugs.FightingLayoutBugs;
 import com.googlecode.fightinglayoutbugs.LayoutBug;
@@ -227,8 +228,28 @@ public class UserHelper2 extends DriverBasedHelper implements UserHelper {
 	@Override
 	public boolean isSearchFound(Files filename) {
 		return pages.myfilessearchPage.ensurePageLoaded()
-				.getsearchResultTable().contains(filename.getName()) |
-				pages.myfilessearchPage.ensurePageLoaded().getsearchResultTable().size()==10;
+				.getsearchResultTable().contains(filename.getName())
+				| pages.myfilessearchPage.ensurePageLoaded()
+						.getsearchResultTable().size() == 10;
+	}
+
+	@Override
+	public User getLoggedUserInfo() {
+		UserProfilePage userProfile = pages.internalPage.ensurePageLoaded()
+				.clickUserProfilePage().ensurePageLoaded();
+		return new User().setUsername(userProfile.getFIO())
+				.setPhone(userProfile.getPhone())
+				.setEmail(userProfile.getEmail());
+	}
+
+	@Override
+	public User getUserCabinetInfo() {
+		UserCabinetPage userCabinet = pages.usercabinetPage.ensurePageLoaded()
+				.clickUserCabinetPage().ensurePageLoaded();
+		return new User().setUsername(userCabinet.getFIO())
+				.setPhone(userCabinet.getPhone())
+				.setEmail(userCabinet.getEmail());
+
 	}
 }
 
