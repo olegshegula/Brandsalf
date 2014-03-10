@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.bs.selenium.functional.UserCabinetTest">
+      <class name="com.bs.selenium.functional.LoadNewFileTest">
         <methods>
-          <include name="testCheckUserInfoInTheCabinet"/>
           <include name="init"/>
           <include name="mayBeLogout"/>
           <include name="stop"/>
+          <include name="testAddNewContractOK"/>
         </methods>
-      </class> <!-- com.bs.selenium.functional.UserCabinetTest -->
+      </class> <!-- com.bs.selenium.functional.LoadNewFileTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

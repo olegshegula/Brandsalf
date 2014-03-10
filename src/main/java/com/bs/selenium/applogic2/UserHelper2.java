@@ -13,6 +13,7 @@ import com.bs.selenium.applogic.UserHelper;
 import com.bs.selenium.model.Constants;
 import com.bs.selenium.model.Files;
 import com.bs.selenium.model.Folder;
+import com.bs.selenium.model.Money;
 import com.bs.selenium.model.User;
 import com.bs.selenium.pagesall.UserCabinetPage;
 import com.bs.selenium.pagesall.UserProfilePage;
@@ -263,6 +264,17 @@ public class UserHelper2 extends DriverBasedHelper implements UserHelper {
 		return userprofile.getUsername().contains(usercab.getUsername())
 				| userprofile.getPhone().contains(usercab.getPhone())
 				| userprofile.getEmail().contains(usercab.getEmail());
+	}
+
+	@Override
+	public void LoadDocument(Money amount, Files name, Files path) {
+		
+		pages.loadPage
+		.setSummaInputField(amount.getAmount())
+		.NextButton()
+		.uploadFile(path.getPath())		
+		.clickCreate();
+		
 	}
 }
 

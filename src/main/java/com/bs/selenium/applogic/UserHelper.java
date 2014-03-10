@@ -6,6 +6,7 @@ package com.bs.selenium.applogic;
 
 import com.bs.selenium.model.Files;
 import com.bs.selenium.model.Folder;
+import com.bs.selenium.model.Money;
 import com.bs.selenium.model.User;
 
 public interface UserHelper {
@@ -56,4 +57,5 @@ public interface UserHelper {
 	User getLoggedUserInfo();
 	User getUserCabinetInfo();
 	boolean checkUserInfo();
+	void LoadDocument(Money amount, Files name, Files path);
 }
