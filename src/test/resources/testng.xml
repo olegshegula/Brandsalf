@@ -271,6 +271,15 @@
 			</class>
 		</classes>
 	</test>
+	<test verbose="2" name="testCheckUserInfoInTheCabinet">
+		<classes>
+			<class name="com.bs.selenium.functional.UserCabinetTest">
+				<methods>
+					<include name="testCheckUserInfoInTheCabinet" />
+				</methods>
+			</class>
+		</classes>
+	</test>
 
 
 

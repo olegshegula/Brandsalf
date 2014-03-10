@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="9062" started-at="2014-03-09T10:24:25Z" finished-at="2014-03-09T10:24:34Z">
+  <suite name="Default suite" duration-ms="10759" started-at="2014-03-10T10:54:53Z" finished-at="2014-03-10T10:55:03Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="9062" started-at="2014-03-09T10:24:25Z" finished-at="2014-03-09T10:24:34Z">
+    <test name="Default test" duration-ms="10759" started-at="2014-03-10T10:54:53Z" finished-at="2014-03-10T10:55:03Z">
       <class name="com.bs.selenium.functional.UserCabinetTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.bs.selenium.functional.UserCabinetTest@30cbd22a]" name="init" is-config="true" duration-ms="6728" started-at="2014-03-09T12:24:25Z" finished-at="2014-03-09T12:24:32Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.bs.selenium.functional.UserCabinetTest@76c5faf5]" name="init" is-config="true" duration-ms="5824" started-at="2014-03-10T12:54:53Z" finished-at="2014-03-10T12:54:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="mayBeLogout()[pri:0, instance:com.bs.selenium.functional.UserCabinetTest@30cbd22a]" name="mayBeLogout" is-config="true" duration-ms="69" started-at="2014-03-09T12:24:32Z" finished-at="2014-03-09T12:24:32Z">
+        <test-method status="PASS" signature="mayBeLogout()[pri:0, instance:com.bs.selenium.functional.UserCabinetTest@76c5faf5]" name="mayBeLogout" is-config="true" duration-ms="106" started-at="2014-03-10T12:54:58Z" finished-at="2014-03-10T12:54:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- mayBeLogout -->
-        <test-method status="PASS" signature="testCheckUserInfoInTheCabinet()[pri:0, instance:com.bs.selenium.functional.UserCabinetTest@30cbd22a]" name="testCheckUserInfoInTheCabinet" duration-ms="2251" started-at="2014-03-09T12:24:32Z" finished-at="2014-03-09T12:24:34Z">
+        <test-method status="PASS" signature="testCheckUserInfoInTheCabinet()[pri:0, instance:com.bs.selenium.functional.UserCabinetTest@76c5faf5]" name="testCheckUserInfoInTheCabinet" duration-ms="4814" started-at="2014-03-10T12:54:59Z" finished-at="2014-03-10T12:55:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCheckUserInfoInTheCabinet -->
-        <test-method status="PASS" signature="stop()[pri:0, instance:com.bs.selenium.functional.UserCabinetTest@30cbd22a]" name="stop" is-config="true" duration-ms="228" started-at="2014-03-09T12:24:34Z" finished-at="2014-03-09T12:24:34Z">
+        <test-method status="PASS" signature="stop()[pri:0, instance:com.bs.selenium.functional.UserCabinetTest@76c5faf5]" name="stop" is-config="true" duration-ms="201" started-at="2014-03-10T12:55:03Z" finished-at="2014-03-10T12:55:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stop -->

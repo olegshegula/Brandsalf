@@ -23,6 +23,9 @@ import com.googlecode.fightinglayoutbugs.WebPage;
 
 public class UserHelper2 extends DriverBasedHelper implements UserHelper {
 
+	private User userprofile;
+	private User usercab;
+
 	public UserHelper2(ApplicationManager2 manager) {
 		super(manager.getWebDriver());
 	}
@@ -237,19 +240,29 @@ public class UserHelper2 extends DriverBasedHelper implements UserHelper {
 	public User getLoggedUserInfo() {
 		UserProfilePage userProfile = pages.internalPage.ensurePageLoaded()
 				.clickUserProfilePage().ensurePageLoaded();
-		return new User().setUsername(userProfile.getFIO())
+
+		return userprofile = new User().setUsername(userProfile.getFIO())
 				.setPhone(userProfile.getPhone())
 				.setEmail(userProfile.getEmail());
+
 	}
 
 	@Override
 	public User getUserCabinetInfo() {
-		UserCabinetPage userCabinet = pages.usercabinetPage.ensurePageLoaded()
-				.clickUserCabinetPage().ensurePageLoaded();
-		return new User().setUsername(userCabinet.getFIO())
+		UserCabinetPage userCabinet = pages.usercabinetPage.ensurePageLoaded();
+
+		return usercab = new User().setUsername(userCabinet.getFIO())
 				.setPhone(userCabinet.getPhone())
 				.setEmail(userCabinet.getEmail());
 
+	}
+
+	@Override
+	public boolean checkUserInfo() {
+
+		return userprofile.getUsername().contains(usercab.getUsername())
+				| userprofile.getPhone().contains(usercab.getPhone())
+				| userprofile.getEmail().contains(usercab.getEmail());
 	}
 }
 

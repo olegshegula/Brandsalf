@@ -55,4 +55,5 @@ public interface UserHelper {
 
 	User getLoggedUserInfo();
 	User getUserCabinetInfo();
+	boolean checkUserInfo();
 }

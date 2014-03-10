@@ -1,6 +1,7 @@
 package com.bs.selenium.functional;
 
 
+import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -22,7 +23,10 @@ public class UserCabinetTest extends TestBase{
 		app.getUserHelper().loginAs(user);
 		
 		app.getUserHelper().getLoggedUserInfo();
+		app.getNavigationHelper().gotoUserCabinetPage();
 		app.getUserHelper().getUserCabinetInfo();
+		
+		Assert.assertTrue(app.getUserHelper().checkUserInfo());
 		
 	}
 }
