@@ -113,7 +113,7 @@
 				<env>local</env>
 				<user.username></user.username>
 				<user.password></user.password>
-				<grid2.hub>http://192.168.1.255:4444/wd/hub</grid2.hub>
+				<grid2.hub>http://192.168.1.43:4444/wd/hub</grid2.hub>
 				<site.url>http://185.25.118.92/</site.url>
 				<browser.name>firefox</browser.name>
 				<browser.version></browser.version>
@@ -197,7 +197,7 @@
 				<env>prod</env>
 				<user.username></user.username>
 				<user.password></user.password>
-				<grid2.hub>http://192.168.1.255:4444/wd/hub</grid2.hub>
+				<grid2.hub>http://192.168.1.43:4444/wd/hub</grid2.hub>
 				<site.url>http://185.25.118.92/</site.url>
 				<browser.name>chrome</browser.name>
 				<browser.version></browser.version>
